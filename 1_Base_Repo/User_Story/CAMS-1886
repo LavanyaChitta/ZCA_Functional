@@ -1,0 +1,54 @@
+UMB : Designated Professional Services Exclusion ZC3676
+Description
+
+PLP 4485
+
+Line of business : Umbrella
+
+Coverage Number : ZC 3676
+
+Type : Exclusion
+
+Exclusion Name : Designated Professional Services
+
+Business Objective :
+
+To implement a new exclusion coverage under UMB to restrict claims arising from designated professional services as defined by exclusion ZC 3676.
+
+Requirements :
+
+R1) UI requirements : Add a new exclusion:
+
+As a policy center user, I want a new exclusion under Umbrella ZC 3676 Exclusion - Designated Professional Services.
+So that I can select the exclusion and add it on transaction.
+
+Exclusion should appear on :
+
+New business
+Renewal
+Policy change
+Rewrite
+
+Exclusion Type : Optional
+
+R2) Form Attachment
+
+Upon selection of the exclusion ZC 3676 attach the document automatically to the final policy documents based on the language selected.
+
+Include proper versioning and form edition date.
+
+R3) Coverage Terms:
+
+Add a schedule box for ZC 3676 which will display only when user selects ZC 3676 on UI were user can click on "Add" to add a schedule row.
+
+A free form text field available for user to enter the "Designated professional services excluded".( upto 250 characters)
+
+User may enter as many rows as required.
+
+R4) Validation Rules :
+
+When user selects ZC 3676 on UI and does not enter a schedule then an OOTB error message to trigger.
+
+R5) Effective date of the new exclusion :
+
+The new exclusion to be available for selection only on the policies/ renewals starting from August release live date.
