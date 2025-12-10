@@ -37,63 +37,38 @@ def extract_user_story_id(text: str):
 
 
 def extract_acceptance_criteria(text: str):
-    # Find 'Acceptance Criteria' section
+    # Robustly collect acceptance criteria or requirement lines.
+    # Accept formats like:
+    # - R1) ...
+    # - 1. ...
+    # - - bullet
     acs = []
-    patterns = [r"^#+\s*Acceptance Criteria", r"^Acceptance Criteria:\s*$"]
     lines = text.splitlines()
-    start = None
-    for i, line in enumerate(lines):
-        for p in patterns:
-            if re.search(p, line, re.IGNORECASE):
-                start = i + 1
-                break
-        if start:
-            break
 
-    if start is None:
-        # try to collect numbered list anywhere in file under 'Acceptance' keywords
-        for i, line in enumerate(lines):
-            if re.search(r"Acceptance", line, re.IGNORECASE):
-                start = i + 1
-                break
-
-    if start is None:
-        # fallback: find any top-level numbered list
-        for line in lines:
-            if re.match(r"^\s*\d+\.", line):
-                start = 0
-                break
-
-    if start is None:
-        return []
-
-    # Collect list items until next header or blank block that looks like end
-    for line in lines[start:]:
-        if re.match(r"^#{1,6}\s+", line):
-            break
-        # numbered or dash list
-        m = re.match(r"^\s*\d+\.\s*(.*)", line)
-        if m:
-            acs.append(m.group(1).strip())
+    for line in lines:
+        # Match patterns like 'R1) text' or 'R 1) text' or '1) text' or '1. text'
+        m = re.match(r"^\s*(?:R\s*)?(\d+)[\)\.]\s*(.*)", line, re.IGNORECASE)
+        if m and m.group(2).strip():
+            acs.append(m.group(2).strip())
             continue
+
+        # Match bullet lists '- item' or '* item'
         m2 = re.match(r"^\s*[-*]\s*(.*)", line)
-        if m2:
+        if m2 and m2.group(1).strip():
             acs.append(m2.group(1).strip())
             continue
-        # lines that are non-empty and look like acceptance criteria continuation
-        if line.strip():
-            # sometimes ACs are single-line paragraphs; collect lines that start with uppercase
-            acs.append(line.strip())
-        else:
-            # blank line: may indicate end depending on what we've collected
-            if acs:
-                break
 
-    # Clean duplicates and trim
+    # If nothing found yet, as a last resort pick up any numbered '1. ' style lines
+    if not acs:
+        for line in lines:
+            m3 = re.match(r"^\s*\d+\.\s*(.*)", line)
+            if m3 and m3.group(1).strip():
+                acs.append(m3.group(1).strip())
+
+    # Clean duplicates and trim leading numbering like '1)' or '(1)'
     cleaned = []
     for a in acs:
-        # remove leading numbering if any
-        a2 = re.sub(r"^\d+\)|^\(\d+\)|^\d+\.", "", a).strip()
+        a2 = re.sub(r"^\d+\)|^\(\d+\)|^\d+\.|^R\s*\d+\)", "", a, flags=re.IGNORECASE).strip()
         if a2 and a2 not in cleaned:
             cleaned.append(a2)
     return cleaned

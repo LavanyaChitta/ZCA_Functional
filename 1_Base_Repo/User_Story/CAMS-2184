@@ -1,0 +1,20 @@
+ZC 3343 Canada Limited Fungi endt for MM - PLP 4219 - Part 1 - Config changes
+Requirements:
+
+R1) As a Phoenix user,
+I want a new optional coverage "Limited Fungi Coverage ZC 3343" under additional coverages on GL LOB.
+So that user can select the new coverage.
+
+R2) As a Phoenix user,
+I want coverage terms to display for coverage ZC 3343.
+So that whenever I select ZC 3343,coverage terms are available to select.
+
+Coverage term details (As will be displayed on UI) :
+
+Coverage terms:
+
+Fields Name : Fungi Aggregate Limit of Insurance:
+Field Type : Dropdown
+Field values : $25,000, $50,000, $100,000 & $250,000 and Other
+
+When user selects "Other" in limit and value is anything other the dropdown option then another free form manual rating field to enter the premium manually. ( in this case we will not use the current rating algorithm and rate routine and just the manual cost entered will be passed to rating to add in the final premium)

@@ -1,0 +1,2 @@
+TC ID,Test Type,Test Case Name,Description,Action,Expected Result,Test Repository Path,Status,Components,User Story,Priority,Scenario Type
+1,Manual,TC01_Verify_As_a_Phoenix_user_General_NewBusiness_AC1,"Validate acceptance criteria: As a Phoenix user,","1. Validate: As a Phoenix user,","1. System behavior should satisfy: As a Phoenix user,",1_Base_Repo,Not Started,Middle Market,CAMS-2184,High,Positive
