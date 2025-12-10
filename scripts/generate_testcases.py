@@ -45,12 +45,33 @@ def extract_acceptance_criteria(text: str):
     acs = []
     lines = text.splitlines()
 
-    for line in lines:
+    for i, line in enumerate(lines):
         # Match patterns like 'R1) text' or 'R 1) text' or '1) text' or '1. text'
         m = re.match(r"^\s*(?:R\s*)?(\d+)[\)\.]\s*(.*)", line, re.IGNORECASE)
-        if m and m.group(2).strip():
-            acs.append(m.group(2).strip())
-            continue
+        if m:
+            content = m.group(2).strip()
+            # If the content is short or looks like a header (ends with comma),
+            # capture subsequent non-empty lines until a blank line or next numbered item.
+            if not content or content.endswith(",") or len(content.split()) < 4:
+                parts = [content] if content else []
+                j = i + 1
+                while j < len(lines):
+                    nxt = lines[j].strip()
+                    if not nxt:
+                        break
+                    if re.match(r"^\s*(?:R\s*)?\d+[\)\.]", nxt):
+                        break
+                    if re.match(r"^#{1,6}\s+", nxt):
+                        break
+                    parts.append(nxt)
+                    j += 1
+                full = " ".join([p for p in parts if p]).strip()
+                if full:
+                    acs.append(full)
+                continue
+            else:
+                acs.append(content)
+                continue
 
         # Match bullet lists '- item' or '* item'
         m2 = re.match(r"^\s*[-*]\s*(.*)", line)
