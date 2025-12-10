@@ -40,30 +40,40 @@ Click on Transaction and verify the details mapped correctly from UWD to PC in p
 ### 4. Property Screen
 - Navigate to Property screen
 - Fill all mandatory fields
+- Navigate to Standard Coverages tab and fill required mandatory fields
+- Navigate to Extensions tab and fill Default Deductible field
 - **Validate integrations in location screen:**
   - Geocode
   - OPTA
   - Risk Predictive Analysis
   - CCL
   - Marginal Impact
+
+  - Navigate to Crime screen and fill Class Code
  
 ### 5. Inland Marine LOB
 - Navigate to Inland Marine LOB
-- Fill all mandatory fields
+- Select required coverages from coverage selection screen
+- Fill all mandatory fields in selected coverages
  
 ### 6. General Liability LOB
 - Navigate to General Liability LOB
 - Fill all mandatory fields
- 
+- In Exposures tab: Distribution of Exposures should be 100%   and Exposure Value should be filled
+- In Standard Coverages tab: Coverage D - Tenants' Legal Liability - Limit of Insurance should be filled
+- In Additional Coverages tab: For ZC 3119 Number of Non-Clerical Employees (Not covered by Workers Compensation)should be filled
+
 ### 7. Umbrella LOB
 - Navigate to Umbrella LOB
 - Fill all mandatory fields
+- In Standard Coverages tab:ZC3500 field values should be filled
  
 ### 8. Financial Lines
 - Navigate to Financial Lines
 - Add the products
 - Fill all mandatory fields
- 
+- Navigate to Risk Assessment Questions screen
+- Fill all mandatory fields
 ---
  
 ## Pricing & Approval
@@ -114,6 +124,10 @@ Click on Transaction and verify the details mapped correctly from UWD to PC in p
  
 ### 17. Issue the Policy
 - Click on Issue the policy of issuance submission
+- Navigate to forms screen and check for forms which are added
+
+### 18. Generated Documents Check
+- Check generated Declaration,Quote,Binder documents.
  
 ---
  
@@ -125,9 +139,9 @@ Click on Transaction and verify the details mapped correctly from UWD to PC in p
  
 ### **Transactions To Be Covered:**
 - New Business
-- Policy Change
+- Policy Change Midterm
 - Policy Change OOS
-- Cancel
+- Policy Change Inception
 - Reinstate
 - Rewrite
 - Rewrite OOS

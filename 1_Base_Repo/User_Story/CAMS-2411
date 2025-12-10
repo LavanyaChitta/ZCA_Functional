@@ -1,0 +1,52 @@
+Change the date to 30 days from existing 15 days for UWD/EDB status change to Non-Renew
+Description
+
+Requirements
+
+R1) Status in EBD for renewals which are not issued in Phoenix and after 30 days past their expiry date should be changed to non-renew. Currently the functionality is happening, but the status is changing after 15 days past the policy expiry date. 
+
+R2) Change in number of days should be applicable for commercial auto and middle market. 
+
+Acceptance Criteria 1:
+
+As a 
+
+product user
+
+when 
+
+the current date is past 30 days after the policy expiry date (Renewal effective date), and the renewal transaction is not yet issued in Phoenix
+
+then I want
+
+EDB to update the status as non-renew in EDB/UWD.
+
+Acceptance Criteria 2:
+
+As a 
+
+product user
+
+when 
+
+the current date is past 30 days after the policy expiry date (Renewal effective date), and the renewal transaction is issued in Phoenix
+
+then I want
+
+EDB to update the status as per Phoenix and it should not be non-renew. 
+
+ 
+
+Acceptance Criteria 3:
+
+As a 
+
+product user
+
+when 
+
+the current date is past 15 days after the policy expiry date (Renewal effective date), and the renewal transaction is not yet issued in Phoenix
+
+then I want
+
+EDB to update the status as per Phoenix and it should not be non-renew. 
