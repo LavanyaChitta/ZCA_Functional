@@ -1,0 +1,108 @@
+TC ID,Test Type,Test Case Name,Description,Action,Expected Result,Test Repository Path,Status,Components,User Story,Priority,Scenario Type
+1,Manual,"TC01_Verify_Phoenix_requirements_New_Business_Domestic_AC1","The objective of this test case is to validate: Phoenix requirements - Dev to send the latest 03/25 edition form in payload for Domestic New Business.","1. Navigate to Phoenix submission creation screen","1. User should be able to view the submission creation screen with all required fields","Inland Marine/CAMS-1879","Not Started","Middle Market","CAMS-1879","High","Positive"
+1,,,,"2. Create a Domestic submission","2. User should be able to create a submission successfully and proceed to line selection",,,,,
+1,,,,"3. Navigate to Line selection screen and select Inland Marine LOB","3. User should be able to view the Inland Marine screen with all mandatory fields displayed",,,,,
+1,,,,"4. Select transaction type: New Business","4. System should display transaction-specific fields and accept New Business inputs",,,,,
+1,,,,"5. Verify payload contains latest form edition 03/25","5. API payload should include form ZC 6356 with edition date 03/25 and proper versioning",,,,,
+1,,,,"6. Fill mandatory fields and proceed","6. No validation errors; data saved successfully",,,,,
+1,,,,"7. Price, Quote & Bind the policy","7. Policy should be priced, quoted and bound without errors",,,,,
+1,,,,"8. Verify form metadata in documents","8. Document section should show attached form with correct edition and version info",,,,,
+
+2,Manual,"TC02_Verify_Phoenix_requirements_Policy_Change_Inception_Produced_AC1","The objective of this test case is to validate: Phoenix requirements - Dev to send the latest 03/25 edition form in payload for Produced Policy Change - Inception.","1. Navigate to Phoenix submission creation screen","1. User should be able to view the submission creation screen with all required fields","Inland Marine/CAMS-1879","Not Started","Middle Market","CAMS-1879","High","Positive"
+2,,,,"2. Create a Produced submission","2. User should be able to create a Produced submission successfully and proceed to line selection",,,,,
+2,,,,"3. Navigate to Line selection screen and select Inland Marine LOB","3. User should be able to view the Inland Marine screen with all mandatory fields displayed",,,,,
+2,,,,"4. Select transaction type: Policy Change - Inception","4. System should display inception-specific fields and accept transaction inputs",,,,,
+2,,,,"5. Verify payload contains latest form edition 03/25","5. API payload should include form ZC 6356 with edition date 03/25 and proper versioning",,,,,
+2,,,,"6. Fill mandatory fields and proceed","6. No validation errors; data saved successfully",,,,,
+2,,,,"7. Price, Quote & Bind the policy","7. Policy should be priced, quoted and bound without errors",,,,,
+2,,,,"8. Verify form metadata in documents","8. Document section should show attached form with correct edition and version info",,,,,
+
+3,Manual,"TC03_Verify_Phoenix_requirements_Policy_Change_Midterm_Domestic_AC1","The objective of this test case is to validate: Phoenix requirements - Dev to send the latest 03/25 edition form in payload for Domestic Policy Change - Midterm.","1. Navigate to Phoenix submission creation screen","1. User should be able to view the submission creation screen with all required fields","Inland Marine/CAMS-1879","Not Started","Middle Market","CAMS-1879","High","Positive"
+3,,,,"2. Create a Domestic policy change midterm submission","2. User should be able to create the midterm submission and proceed",,,,,
+3,,,,"3. Navigate to Line selection screen and select Inland Marine LOB","3. User should be able to view the Inland Marine screen with all mandatory fields displayed",,,,,
+3,,,,"4. Select transaction type: Policy Change - Midterm","4. System should display midterm-specific fields and accept transaction inputs",,,,,
+3,,,,"5. Verify payload contains latest form edition 03/25","5. API payload should include form ZC 6356 with edition date 03/25 and proper versioning",,,,,
+3,,,,"6. Fill mandatory fields and proceed","6. No validation errors; data saved successfully",,,,,
+3,,,,"7. Price, Quote & Bind the policy","7. Policy should be priced, quoted and bound without errors",,,,,
+3,,,,"8. Verify form metadata in documents","8. Document section should show attached form with correct edition and version info",,,,,
+
+4,Manual,"TC04_Verify_Phoenix_requirements_Policy_Change_Out_of_Sequence_Produced_AC1","The objective of this test case is to validate: Phoenix requirements - Dev to send the latest 03/25 edition form in payload for Produced Policy Change - Out of Sequence.","1. Navigate to Phoenix submission creation screen","1. User should be able to view the submission creation screen with all required fields","Inland Marine/CAMS-1879","Not Started","Middle Market","CAMS-1879","High","Positive"
+4,,,,"2. Create a Produced out-of-sequence policy change","2. User should be able to create the out-of-sequence change and proceed",,,,,
+4,,,,"3. Navigate to Line selection screen and select Inland Marine LOB","3. User should be able to view the Inland Marine screen with all mandatory fields displayed",,,,,
+4,,,,"4. Select transaction type: Policy Change - Out of Sequence","4. System should display fields appropriate for out-of-sequence changes",,,,,
+4,,,,"5. Verify payload contains latest form edition 03/25","5. API payload should include form ZC 6356 with edition date 03/25 and proper versioning",,,,,
+4,,,,"6. Fill mandatory fields and proceed","6. No validation errors; data saved successfully",,,,,
+4,,,,"7. Price, Quote & Bind the policy","7. Policy should be priced, quoted and bound without errors",,,,,
+4,,,,"8. Verify form metadata in documents","8. Document section should show attached form with correct edition and version info",,,,,
+
+5,Manual,"TC05_Verify_Form_Attachment_New_Business_Produced_AC2","The objective of this test case is to validate: Form Attachment - automatic attach of ZC 6356 with proper versioning for Produced New Business.","1. Navigate to Phoenix submission creation screen","1. User should be able to view the submission creation screen with all required fields","Inland Marine/CAMS-1879","Not Started","Middle Market","CAMS-1879","High","Positive"
+5,,,,"2. Create a Produced submission","2. User should be able to create a Produced submission successfully and proceed to line selection",,,,,
+5,,,,"3. Navigate to Line selection screen and select Contractors Equipment coverage","3. User should be able to view coverage options including Contractors Equipment",,,,,
+5,,,,"4. Select Contractors Equipment coverage and choose form ZC 6356","4. Form ZC 6356 should be auto-attached to the documents section upon selection",,,,,
+5,,,,"5. Verify the attached form is the latest edition 03/25","5. Documents should show form ZC 6356 with edition date 03/25 and correct versioning",,,,,
+5,,,,"6. Fill mandatory fields and proceed","6. No validation errors; data saved successfully",,,,,
+5,,,,"7. Price, Quote & Bind the policy","7. Policy should be priced, quoted and bound without errors",,,,,
+5,,,,"8. Verify form metadata in documents","8. Document section should show version metadata for the attached form",,,,,
+
+6,Manual,"TC06_Verify_Form_Attachment_Policy_Change_Inception_Domestic_AC2","The objective of this test case is to validate: Form Attachment auto-add behavior for Domestic Policy Change - Inception.","1. Navigate to Phoenix submission creation screen","1. User should be able to view the submission creation screen with all required fields","Inland Marine/CAMS-1879","Not Started","Middle Market","CAMS-1879","High","Positive"
+6,,,,"2. Use the Run created in TC1 or create a new Domestic inception change","2. User should reach the Line selection for the change",,,,,
+6,,,,"3. Navigate to Contractors Equipment coverage","3. Contractors Equipment coverage should be accessible",,,,,
+6,,,,"4. Select form ZC 6356","4. Form ZC 6356 should be automatically added to the documents section",,,,,
+6,,,,"5. Verify edition and versioning is 03/25","5. Attached form should display edition date 03/25 and correct metadata",,,,,
+6,,,,"6. Fill mandatory fields and proceed","6. No validation errors; data saved successfully",,,,,
+6,,,,"7. Price, Quote & Bind the policy change","7. System should process the change and allow bind",,,,,
+6,,,,"8. Confirm document metadata in change payload","8. Change payload should reference the correct form edition and version",,,,,
+
+7,Manual,"TC07_Verify_Form_Attachment_Policy_Change_Midterm_Produced_AC2","The objective of this test case is to validate: Form Attachment auto-add for Produced Policy Change - Midterm.","1. Navigate to Phoenix submission creation screen","1. User should be able to view the submission creation screen with all required fields","Inland Marine/CAMS-1879","Not Started","Middle Market","CAMS-1879","High","Positive"
+7,,,,"2. Create or reference a Produced midterm change","2. User should reach the midterm change flow",,,,,
+7,,,,"3. Navigate to Contractors Equipment coverage","3. Contractors Equipment coverage should be accessible",,,,,
+7,,,,"4. Select form ZC 6356","4. Form ZC 6356 should be automatically added to the documents section",,,,,
+7,,,,"5. Verify edition and versioning is 03/25","5. Attached form should display edition date 03/25 and correct metadata",,,,,
+7,,,,"6. Fill mandatory fields and proceed","6. No validation errors; data saved successfully",,,,,
+7,,,,"7. Price, Quote & Bind the policy change","7. System should process the midterm change and allow bind",,,,,
+7,,,,"8. Confirm document metadata in change payload","8. Change payload should reference the correct form edition and version",,,,,
+
+8,Manual,"TC08_Verify_Form_Attachment_Policy_Change_Out_of_Sequence_Domestic_AC2","The objective of this test case is to validate: Form Attachment for Domestic Out of Sequence changes.","1. Navigate to Phoenix submission creation screen","1. User should be able to view the submission creation screen with all required fields","Inland Marine/CAMS-1879","Not Started","Middle Market","CAMS-1879","High","Positive"
+8,,,,"2. Create an out-of-sequence Domestic change","2. User should be able to create the out-of-sequence change and proceed",,,,,
+8,,,,"3. Navigate to Contractors Equipment coverage","3. Contractors Equipment coverage should be accessible",,,,,
+8,,,,"4. Select form ZC 6356","4. Form ZC 6356 should be automatically added to the documents section",,,,,
+8,,,,"5. Verify edition and versioning is 03/25","5. Attached form should display edition date 03/25 and correct metadata",,,,,
+8,,,,"6. Fill mandatory fields and proceed","6. No validation errors; data saved successfully",,,,,
+8,,,,"7. Price, Quote & Bind the policy change","7. System should process the change and allow bind",,,,,
+8,,,,"8. Confirm document metadata in change payload","8. Change payload should reference the correct form edition and version",,,,,
+
+9,Manual,"TC09_Verify_Effective_Date_New_Business_Produced_AC3","The objective of this test case is to validate: Effective date of the form (August release) for Produced New Business.","1. Navigate to Phoenix submission creation screen","1. User should be able to view the submission creation screen with all required fields","Inland Marine/CAMS-1879","Not Started","Middle Market","CAMS-1879","High","Positive"
+9,,,,"2. Create a Produced submission with effective date aligned to release","2. User should be able to set effective date to the August release date",,,,,
+9,,,,"3. Navigate to Contractors Equipment coverage and select ZC 6356","3. Contractors Equipment coverage should be accessible and ZC 6356 selectable",,,,,
+9,,,,"4. Verify applied form edition matches effective date","4. System should choose the latest form edition valid for the selected effective date (03/25 edition valid for August)",,,,,
+9,,,,"5. Fill mandatory fields and proceed","5. No validation errors; data saved successfully",,,,,
+9,,,,"6. Price, Quote & Bind the policy","6. Policy should be priced, quoted and bound without errors",,,,,
+9,,,,"7. Verify effective date in payload","7. Payload should include the effective date and associated form edition metadata",,,,,
+9,,,,"8. Confirm document shows correct edition for effective date","8. Documents should present the form edition consistent with the effective date",,,,,
+
+10,Manual,"TC10_Verify_Effective_Date_Policy_Change_Inception_Domestic_AC3","The objective of this test case is to validate: Effective date behavior for Domestic Policy Change - Inception and the August release.","1. Navigate to Phoenix submission creation screen","1. User should be able to view the submission creation screen with all required fields","Inland Marine/CAMS-1879","Not Started","Middle Market","CAMS-1879","High","Positive"
+10,,,,"2. Create a Domestic inception change with effective date set to release","2. User should be able to set effective date to August release",,,,,
+10,,,,"3. Select Contractors Equipment coverage and ZC 6356","3. ZC 6356 should be selectable and attached where required",,,,,
+10,,,,"4. Verify applied form edition matches effective date","4. System should select the appropriate edition for the effective date (03/25)",,,,,
+10,,,,"5. Fill mandatory fields and proceed","5. No validation errors; data saved successfully",,,,,
+10,,,,"6. Price, Quote & Bind the policy change","6. System should process the change and allow bind",,,,,
+10,,,,"7. Verify effective date and form edition in payload","7. Payload should include effective date and form edition metadata",,,,,
+10,,,,"8. Confirm document shows correct edition for effective date","8. Documents should present the form edition consistent with the effective date",,,,,
+
+11,Manual,"TC11_Verify_Effective_Date_Policy_Change_Midterm_Produced_AC3","The objective of this test case is to validate: Effective date handling for Produced Policy Change - Midterm with August release.","1. Navigate to Phoenix submission creation screen","1. User should be able to view the submission creation screen with all required fields","Inland Marine/CAMS-1879","Not Started","Middle Market","CAMS-1879","High","Positive"
+11,,,,"2. Create a Produced midterm change targeting release effective date","2. User should be able to set effective date to August release",,,,,
+11,,,,"3. Select Contractors Equipment coverage and ZC 6356","3. ZC 6356 should be selectable and attached where required",,,,,
+11,,,,"4. Verify applied form edition matches effective date","4. System should select the appropriate edition for the effective date (03/25)",,,,,
+11,,,,"5. Fill mandatory fields and proceed","5. No validation errors; data saved successfully",,,,,
+11,,,,"6. Price, Quote & Bind the policy change","6. System should process the midterm change and allow bind",,,,,
+11,,,,"7. Verify effective date and form edition in payload","7. Payload should include effective date and form edition metadata",,,,,
+11,,,,"8. Confirm document shows correct edition for effective date","8. Documents should present the form edition consistent with the effective date",,,,,
+
+12,Manual,"TC12_Verify_Effective_Date_Policy_Change_Out_of_Sequence_Domestic_AC3","The objective of this test case is to validate: Effective date for Domestic Out of Sequence changes with August release.","1. Navigate to Phoenix submission creation screen","1. User should be able to view the submission creation screen with all required fields","Inland Marine/CAMS-1879","Not Started","Middle Market","CAMS-1879","High","Positive"
+12,,,,"2. Create an out-of-sequence Domestic change and set effective date to release","2. User should be able to set effective date to August release",,,,,
+12,,,,"3. Select Contractors Equipment coverage and ZC 6356","3. ZC 6356 should be selectable and attached where required",,,,,
+12,,,,"4. Verify applied form edition matches effective date","4. System should select the appropriate edition for the effective date (03/25)",,,,,
+12,,,,"5. Fill mandatory fields and proceed","5. No validation errors; data saved successfully",,,,,
+12,,,,"6. Price, Quote & Bind the policy change","6. System should process the change and allow bind",,,,,
+12,,,,"7. Verify effective date and form edition in payload","7. Payload should include effective date and form edition metadata",,,,,
+12,,,,"8. Confirm document shows correct edition for effective date","8. Documents should present the form edition consistent with the effective date",,,,,

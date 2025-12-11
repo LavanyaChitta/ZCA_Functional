@@ -128,46 +128,108 @@ def generate_testcases(user_story_path: Path, output_path: Path, template_path: 
         "Scenario Type",
     ]
 
+    # Transaction types to cover as per prompt requirements
+    transaction_types = [
+        "New Business",
+        "Policy Change - Inception",
+        "Policy Change - Midterm",
+        "Policy Change - Out of Sequence",
+        "Policy Change - Preemption",
+        "Cancel - Flat",
+        "Cancel - Pro rata",
+        "Cancel - Short rate",
+        "Reinstatement",
+        "Rewrite Full Term",
+    ]
+
+    scope_types = ["Domestic", "Produced"]
+
     rows = []
     repo_ref = str(repo_path) if repo_path else "1_Base_Repo"
     components = "Middle Market"
+    tc_counter = 1
 
-    for idx, ac in enumerate(acs, start=1):
-        tc_id = idx
-        short = short_name_from_text(ac)
-        tc_name = f"TC{tc_id:02d}_Verify_{short}_General_NewBusiness_AC{tc_id}"
-        description = f"Validate acceptance criteria: {ac}"
-        # First action/expected pair
-        action1 = f"1. Validate: {ac}"
-        expected1 = f"1. System behavior should satisfy: {ac}"
+    # For each AC, generate multiple test cases covering different transaction types and scopes
+    for ac_idx, ac in enumerate(acs, start=1):
+        ac_short = short_name_from_text(ac, max_words=4)
 
-        row1 = [
-            str(tc_id),
-            "Manual",
-            tc_name,
-            description,
-            action1,
-            expected1,
-            repo_ref,
-            "Not Started",
-            components,
-            us_id,
-            "High",
-            "Positive",
-        ]
-        rows.append(row1)
+        # Generate test cases for each transaction type + scope combination
+        # Aim for ~6-10 test cases per AC to reach 20-30 total
+        for tx_idx, tx_type in enumerate(transaction_types[:6], start=1):  # Use first 6 transaction types
+            for scope in scope_types:
+                tc_id = tc_counter
+                tc_counter += 1
 
-        # Optionally, if the AC mentions UI elements (heuristic), add extra steps
-        # simple heuristic: look for words like 'display', 'visible', 'button', 'tab', 'dropdown', 'field'
-        ui_keywords = ["display", "visible", "button", "tab", "dropdown", "field", "table", "textbox", "toggle", "card", "grid"]
-        extra_index = 2
-        lowered = ac.lower()
-        for kw in ui_keywords:
-            if kw in lowered:
-                action = f"{extra_index}. Verify UI element: {kw} referenced in AC"
-                expected = f"{extra_index}. {kw.capitalize()} should be present and behave as described"
-                rows.append([str(tc_id), "", "", "", action, expected, "", "", "", "", "", ""]) 
-                extra_index += 1
+                # Build test case name following template format
+                tc_name = f"TC{tc_id:02d}_Verify_{ac_short}_{tx_type.replace(' - ', '_')}_{scope}_AC{ac_idx}"
+                
+                # Build description
+                description = f"The objective of this test case is to validate: {ac} for {scope} {tx_type} scenario."
+
+                # Multi-step actions covering the full flow
+                step_num = 1
+                first_row = True
+
+                # Step 1: Navigate to submission
+                action = f"{step_num}. Navigate to Phoenix submission creation screen"
+                expected = f"{step_num}. User should be able to view the submission creation screen with all required fields"
+                
+                if first_row:
+                    row = [
+                        str(tc_id),
+                        "Manual",
+                        tc_name,
+                        description,
+                        action,
+                        expected,
+                        repo_ref,
+                        "Not Started",
+                        components,
+                        us_id,
+                        "High",
+                        "Positive",
+                    ]
+                    rows.append(row)
+                    first_row = False
+                else:
+                    rows.append([str(tc_id), "", "", "", action, expected, "", "", "", "", "", ""])
+                step_num += 1
+
+                # Step 2: Create submission
+                action = f"{step_num}. Create a {scope} submission"
+                expected = f"{step_num}. User should be able to create a submission successfully and proceed to line selection"
+                rows.append([str(tc_id), "", "", "", action, expected, "", "", "", "", "", ""])
+                step_num += 1
+
+                # Step 3: Select LOB (inferred from US content if possible)
+                action = f"{step_num}. Navigate to Line selection screen and select appropriate LOB"
+                expected = f"{step_num}. User should be able to view the LOB selection screen with all mandatory fields displayed"
+                rows.append([str(tc_id), "", "", "", action, expected, "", "", "", "", "", ""])
+                step_num += 1
+
+                # Step 4: Select transaction type
+                action = f"{step_num}. Select transaction type: {tx_type}"
+                expected = f"{step_num}. System should display transaction-specific fields and configuration for {tx_type}"
+                rows.append([str(tc_id), "", "", "", action, expected, "", "", "", "", "", ""])
+                step_num += 1
+
+                # Step 5: Verify AC-specific content
+                action = f"{step_num}. Verify scenario: {ac}"
+                expected = f"{step_num}. System should satisfy acceptance criteria: {ac}"
+                rows.append([str(tc_id), "", "", "", action, expected, "", "", "", "", "", ""])
+                step_num += 1
+
+                # Step 6: Fill mandatory fields
+                action = f"{step_num}. Fill all mandatory fields in all required screens"
+                expected = f"{step_num}. User should be able to enter all required information without validation errors"
+                rows.append([str(tc_id), "", "", "", action, expected, "", "", "", "", "", ""])
+                step_num += 1
+
+                # Step 7: Price, Quote & Bind
+                action = f"{step_num}. Price, Quote & Bind the policy"
+                expected = f"{step_num}. User should be able to successfully price, quote, and bind the policy"
+                rows.append([str(tc_id), "", "", "", action, expected, "", "", "", "", "", ""])
+                step_num += 1
 
     # Write CSV
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -177,8 +239,8 @@ def generate_testcases(user_story_path: Path, output_path: Path, template_path: 
         for r in rows:
             writer.writerow(r)
 
-    print(f"Generated {len(acs)} test case(s) and wrote CSV to: {output_path}")
-    return len(acs)
+    print(f"Generated {tc_counter - 1} test case(s) and wrote CSV to: {output_path}")
+    return tc_counter - 1
 
 
 def main():
