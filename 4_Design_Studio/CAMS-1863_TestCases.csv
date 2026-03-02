@@ -1,0 +1,547 @@
+TC ID,Test Type,Test Case Name,Description,Action,Expected Result,Test Repository Path,Status,Components,User Story,Priority,Scenario Type
+TC_1863_001,Manual,CAMS-1863_NB_Domestic_ZC6356_AutoAttachment,Verify ZC 6356 form is automatically attached when Inland Marine is selected in New Business with Domestic scope,"1. Create a new submission in UWD
+2. Initiate submission to Phoenix
+3. Navigate to Line selection screen
+4. Verify Inland Marine LOB is selected
+5. Navigate to Inland Marine screen
+6. Fill all mandatory fields
+7. Click Price
+8. Navigate to Forms screen
+9. Validate forms attached","1. Submission created successfully
+2. Submission initiated to Phoenix
+3. User navigates to Line selection screen
+4. Inland Marine LOB is selected and visible
+5. Inland Marine screen displays
+6. All mandatory fields are fillable and validatable
+7. Price operation completes successfully
+8. User navigates to Forms screen
+9. ZC 6356 form (03/25 edition) is auto-attached with latest version",MM - CAMS-1863 / Canada Contractors Equipment Form ZC 6356,ToDo,Middle Market,CAMS-1863,High,Positive
+TC_1863_001,Manual,,,,,(continued),,,,
+,,,,"10. Verify form edition is 03/25
+11. Verify effective date aligns with August release","10. Form edition date displays as 03/25
+11. Effective date is correctly aligned with August release date",MM - CAMS-1863 / Canada Contractors Equipment Form ZC 6356,ToDo,Middle Market,CAMS-1863,High,Positive
+TC_1863_002,Manual,CAMS-1863_NB_Produced_ZC6356_AutoAttachment,Verify ZC 6356 form is automatically attached when Inland Marine is selected in New Business with Produced scope,"1. Create a new submission in UWD
+2. Initiate submission to Phoenix
+3. Navigate to Line selection screen
+4. Select Produced scope
+5. Verify Inland Marine LOB is selected
+6. Navigate to Inland Marine screen
+7. Fill all mandatory fields
+8. Click Price
+9. Navigate to Forms screen
+10. Validate ZC 6356 form attached","1. Submission created successfully
+2. Submission initiated to Phoenix
+3. User navigates to Line selection screen
+4. Produced scope is selected
+5. Inland Marine LOB is selected and visible
+6. Inland Marine screen displays
+7. All mandatory fields are fillable
+8. Price operation completes successfully
+9. User navigates to Forms screen
+10. ZC 6356 form (03/25 edition) is auto-attached",MM - CAMS-1863 / Canada Contractors Equipment Form ZC 6356,ToDo,Middle Market,CAMS-1863,High,Positive
+TC_1863_002,Manual,,,,,(continued),,,,
+,,,,"11. Verify form edition is 03/25
+12. Verify effective date alignment","11. Form edition date displays as 03/25
+12. Effective date is correctly aligned with August release",MM - CAMS-1863 / Canada Contractors Equipment Form ZC 6356,ToDo,Middle Market,CAMS-1863,High,Positive
+TC_1863_003,Manual,CAMS-1863_PC_Inception_AddZC6356,Verify ZC 6356 form can be added in Policy Change Inception when Inland Marine is selected,"1. Create an existing policy in UWD
+2. Navigate to policy change screen
+3. Select Policy Change type
+4. Verify inception date is selected
+5. Navigate to Inland Marine LOB
+6. Add/Select Inland Marine coverage
+7. Navigate to Forms screen
+8. Add ZC 6356 form","1. Existing policy retrieved successfully
+2. Policy change screen displays
+3. Policy Change type is selected
+4. Inception date is correctly set
+5. Inland Marine LOB screen displays
+6. Inland Marine coverage is added/selected
+7. Forms screen displays with available forms
+8. ZC 6356 form (03/25 edition) is available and can be added",MM - CAMS-1863 / Canada Contractors Equipment Form ZC 6356,ToDo,Middle Market,CAMS-1863,High,Positive
+TC_1863_003,Manual,,,,,(continued),,,,
+,,,,"9. Verify form edition is 03/25
+10. Confirm form is attached with latest version","9. Form edition date displays as 03/25
+10. Latest version of form is attached successfully",MM - CAMS-1863 / Canada Contractors Equipment Form ZC 6356,ToDo,Middle Market,CAMS-1863,High,Positive
+TC_1863_004,Manual,CAMS-1863_PC_Midterm_AddZC6356,Verify ZC 6356 form can be added in Policy Change Midterm when Inland Marine is selected,"1. Create an existing policy in UWD
+2. Navigate to policy change screen
+3. Select Policy Change Midterm type
+4. Verify midterm effective date is set
+5. Navigate to Inland Marine LOB
+6. Add/Select Inland Marine coverage
+7. Navigate to Forms screen
+8. Add ZC 6356 form
+9. Verify form edition is 03/25","1. Existing policy retrieved successfully
+2. Policy change screen displays
+3. Policy Change Midterm type is selected
+4. Midterm effective date is correctly set
+5. Inland Marine LOB screen displays
+6. Inland Marine coverage is added/selected
+7. Forms screen displays
+8. ZC 6356 form (03/25 edition) can be added
+9. Form edition date displays as 03/25",MM - CAMS-1863 / Canada Contractors Equipment Form ZC 6356,ToDo,Middle Market,CAMS-1863,Medium,Positive
+TC_1863_004,Manual,,,,,(continued),,,,
+,,,,"10. Verify effective date alignment
+11. Price, Quote & Bind the policy","10. Effective date is correctly aligned
+11. Policy is successfully priced, quoted and bound",MM - CAMS-1863 / Canada Contractors Equipment Form ZC 6356,ToDo,Middle Market,CAMS-1863,Medium,Positive
+TC_1863_005,Manual,CAMS-1863_PC_OOS_AddZC6356,Verify ZC 6356 form can be added in Policy Change Out of Sequence when Inland Marine is selected,"1. Create an existing policy in UWD
+2. Navigate to policy change screen
+3. Select Policy Change Out of Sequence type
+4. Verify OOS effective date is set
+5. Navigate to Inland Marine LOB
+6. Add/Select Inland Marine coverage
+7. Navigate to Forms screen
+8. Add ZC 6356 form
+9. Verify form edition is 03/25
+10. Verify effective date alignment","1. Existing policy retrieved successfully
+2. Policy change screen displays
+3. Policy Change OOS type is selected
+4. OOS effective date is correctly set
+5. Inland Marine LOB screen displays
+6. Inland Marine coverage is added/selected
+7. Forms screen displays
+8. ZC 6356 form (03/25 edition) can be added
+9. Form edition date displays as 03/25
+10. Effective date is correctly aligned with form requirements",MM - CAMS-1863 / Canada Contractors Equipment Form ZC 6356,ToDo,Middle Market,CAMS-1863,Medium,Positive
+TC_1863_006,Manual,CAMS-1863_Renewal_AddZC6356,Verify ZC 6356 form can be added in Renewal when Inland Marine is selected,"1. Create a policy eligible for renewal in UWD
+2. Navigate to renewal screen
+3. Confirm renewal transaction type
+4. Verify renewal effective date corresponds to policy expiry
+5. Navigate to Inland Marine LOB
+6. Verify Inland Marine coverage is carried forward
+7. Navigate to Forms screen
+8. Add/Update ZC 6356 form to latest version
+9. Verify form edition is 03/25","1. Policy eligible for renewal is retrieved
+2. Renewal screen displays
+3. Renewal transaction type is confirmed
+4. Renewal effective date is correctly set
+5. Inland Marine LOB screen displays
+6. Inland Marine coverage is carried forward from original policy
+7. Forms screen displays
+8. ZC 6356 form can be added/updated to latest version
+9. Form edition date displays as 03/25",MM - CAMS-1863 / Canada Contractors Equipment Form ZC 6356,ToDo,Middle Market,CAMS-1863,High,Positive
+TC_1863_006,Manual,,,,,(continued),,,,
+,,,,"10. Verify effective date alignment
+11. Price, Quote & Bind the renewal policy","10. Effective date is correctly aligned
+11. Renewal policy is successfully priced, quoted and bound",MM - CAMS-1863 / Canada Contractors Equipment Form ZC 6356,ToDo,Middle Market,CAMS-1863,High,Positive
+TC_1863_007,Manual,CAMS-1863_Rewrite_AddZC6356,Verify ZC 6356 form can be added in Rewrite when Inland Marine is selected,"1. Create an existing policy in UWD
+2. Navigate to rewrite screen
+3. Select Rewrite transaction type
+4. Verify rewrite effective date is set
+5. Navigate to Inland Marine LOB
+6. Add/Select Inland Marine coverage
+7. Navigate to Forms screen
+8. Add ZC 6356 form to latest version
+9. Verify form edition is 03/25
+10. Verify effective date alignment","1. Existing policy retrieved successfully
+2. Rewrite screen displays
+3. Rewrite transaction type is selected
+4. Rewrite effective date is correctly set
+5. Inland Marine LOB screen displays
+6. Inland Marine coverage is added/selected
+7. Forms screen displays
+8. ZC 6356 form (03/25 edition) can be added
+9. Form edition date displays as 03/25
+10. Effective date is correctly aligned",MM - CAMS-1863 / Canada Contractors Equipment Form ZC 6356,ToDo,Middle Market,CAMS-1863,Medium,Positive
+TC_1863_008,Manual,CAMS-1863_Rewrite_OOS_AddZC6356,Verify ZC 6356 form can be added in Rewrite Out of Sequence when Inland Marine is selected,"1. Create an existing policy in UWD
+2. Navigate to rewrite screen
+3. Select Rewrite Out of Sequence type
+4. Verify OOS effective date is set
+5. Navigate to Inland Marine LOB
+6. Add/Select Inland Marine coverage
+7. Navigate to Forms screen
+8. Add ZC 6356 form to latest version
+9. Verify form edition is 03/25
+10. Verify effective date alignment","1. Existing policy retrieved successfully
+2. Rewrite OOS screen displays
+3. Rewrite OOS type is selected
+4. OOS effective date is correctly set
+5. Inland Marine LOB screen displays
+6. Inland Marine coverage is added/selected
+7. Forms screen displays
+8. ZC 6356 form (03/25 edition) can be added
+9. Form edition date displays as 03/25
+10. Effective date is correctly aligned",MM - CAMS-1863 / Canada Contractors Equipment Form ZC 6356,ToDo,Middle Market,CAMS-1863,Medium,Positive
+TC_1863_009,Manual,CAMS-1863_CancelReinstate_ZC6356_Persistence,Verify ZC 6356 form persists when cancelling and reinstating a policy,"1. Create a policy with ZC 6356 form attached in UWD
+2. Initiate transaction to Phoenix
+3. Navigate to policy summary
+4. Perform Cancel transaction
+5. Confirm cancellation
+6. Reinstate the cancelled policy
+7. Navigate to Forms screen
+8. Verify ZC 6356 form still attached
+9. Verify form edition is 03/25","1. Policy with ZC 6356 form created successfully
+2. Transaction initiated to Phoenix
+3. Policy summary displays
+4. Cancel transaction is executed
+5. Cancellation is confirmed
+6. Policy is successfully reinstated
+7. Forms screen displays
+8. ZC 6356 form remains attached after reinstate
+9. Form edition date still shows 03/25",MM - CAMS-1863 / Canada Contractors Equipment Form ZC 6356,ToDo,Middle Market,CAMS-1863,Medium,Positive
+TC_1863_010,Manual,CAMS-1863_CancelRewrite_AddZC6356,Verify ZC 6356 form can be added in Cancel and Rewrite transaction,"1. Create a policy with Inland Marine in UWD
+2. Initiate transaction to Phoenix
+3. Navigate to policy summary
+4. Perform Cancel and Rewrite transaction
+5. Select Rewrite option
+6. Navigate to Inland Marine LOB
+7. Maintain or update Inland Marine coverage
+8. Navigate to Forms screen
+9. Add ZC 6356 form to latest version
+10. Verify form edition is 03/25","1. Policy with Inland Marine created successfully
+2. Transaction initiated to Phoenix
+3. Policy summary displays
+4. Cancel and Rewrite transaction is executed
+5. Rewrite option is selected
+6. Inland Marine LOB screen displays
+7. Inland Marine coverage is configured
+8. Forms screen displays
+9. ZC 6356 form (03/25 edition) can be added
+10. Form edition date displays as 03/25",MM - CAMS-1863 / Canada Contractors Equipment Form ZC 6356,ToDo,Middle Market,CAMS-1863,Medium,Positive
+TC_1863_011,Manual,CAMS-1863_FormEditionDate_Validation_03_25,Verify form edition date is correctly set to 03/25 when ZC 6356 is added in any transaction,"1. Create a new submission with Inland Marine in UWD
+2. Navigate to Forms screen
+3. Verify ZC 6356 form details
+4. Check form edition field
+5. Validate edition date against expected 03/25
+6. Verify form document displays correct edition
+7. Review form metadata","1. New submission created successfully
+2. Forms screen displays
+3. ZC 6356 form details are visible
+4. Form edition field is present
+5. Edition date correctly shows 03/25
+6. Form document displays 03/25 edition on first page
+7. Form metadata confirms correct edition and date",MM - CAMS-1863 / Canada Contractors Equipment Form ZC 6356,ToDo,Middle Market,CAMS-1863,High,Positive
+TC_1863_012,Manual,CAMS-1863_EffectiveDate_August_Release_Alignment,Verify form effective date aligns with August release date,"1. Create a new submission in UWD
+2. Set effective date within August release period
+3. Navigate to Inland Marine LOB
+4. Navigate to Forms screen
+5. Verify ZC 6356 form is attached
+6. Check form effective date in system
+7. Validate alignment with August release date
+8. Verify in Documents/Forms view","1. New submission created successfully
+2. Effective date set within August release period
+3. Inland Marine LOB configured
+4. Forms screen displays ZC 6356
+5. ZC 6356 form is auto-attached
+6. Form effective date is correctly set in system
+7. Form effective date aligns with August release date
+8. Forms document view shows correct effective date",MM - CAMS-1863 / Canada Contractors Equipment Form ZC 6356,ToDo,Middle Market,CAMS-1863,High,Positive
+TC_1863_013,Manual,CAMS-1863_FormDisplay_DecDocument_Validation,Verify ZC 6356 form appears in Declaration document when policy is issued,"1. Create a new submission with Inland Marine and ZC 6356 in UWD
+2. Fill all mandatory fields
+3. Price the submission
+4. Generate Quote
+5. Bind the policy
+6. Navigate to Issue Policy screen
+7. Click Price for issuance submission
+8. Click Issue the policy
+9. Validate Forms screen
+10. Validate Dec Document
+11. Verify ZC 6356 is listed in Dec Document","1. New submission created successfully
+2. All mandatory fields are filled
+3. Submission is priced successfully
+4. Quote is generated with ZC 6356
+5. Policy is successfully bound
+6. Issue Policy screen displays
+7. Issuance submission is priced
+8. Policy issuance completes
+9. Forms screen displays all attached forms
+10. Dec Document is generated and displays all forms
+11. ZC 6356 form (03/25 edition) is listed in Dec Document",MM - CAMS-1863 / Canada Contractors Equipment Form ZC 6356,ToDo,Middle Market,CAMS-1863,High,Positive
+TC_1863_014,Manual,CAMS-1863_BackdatedNB_Renewal_ZC6356,Verify ZC 6356 form is correctly updated in Renewal on Backdated New Business,"1. Create a backdated New Business submission in UWD
+2. Set backdated effective date
+3. Navigate to Inland Marine LOB
+4. Configure Inland Marine coverage
+5. Navigate to Forms screen
+6. Verify ZC 6356 form is auto-attached
+7. Price, Quote & Bind the policy
+8. Navigate to Renewal screen after effective date
+9. Verify ZC 6356 form is carried forward
+10. Verify form is latest version (03/25)
+11. Confirm renewal can be processed","1. Backdated NB submission created successfully
+2. Backdated effective date is set correctly
+3. Inland Marine LOB screen displays
+4. Inland Marine coverage is configured
+5. Forms screen displays
+6. ZC 6356 form (03/25 edition) is auto-attached with backdated effective date
+7. Policy is successfully priced, quoted and bound
+8. Renewal screen displays
+9. ZC 6356 form is carried forward to renewal
+10. Form version shows latest 03/25 edition
+11. Renewal can be processed with ZC 6356",MM - CAMS-1863 / Canada Contractors Equipment Form ZC 6356,ToDo,Middle Market,CAMS-1863,Medium,Positive
+TC_1863_015,Manual,CAMS-1863_OldVersion_NotAttached,Verify old version of ZC 6356 form is NOT attached when Inland Marine is selected,"1. Create a new submission with Inland Marine in UWD
+2. Navigate to Forms screen
+3. Review all available forms for Inland Marine
+4. Verify ZC 6356 form option
+5. Select/Attach ZC 6356 form
+6. Verify form attached
+7. Check form edition in system database
+8. Validate no older versions are present
+9. Query system for old form versions
+10. Confirm only latest version available","1. New submission created successfully
+2. Forms screen displays
+3. Available forms for Inland Marine are listed
+4. Only ZC 6356 (03/25 edition) appears in options
+5. When selected, latest version is attached
+6. Form is successfully attached
+7. System database shows only 03/25 edition
+8. No older versions (pre-03/25) of ZC 6356 are present
+9. Query returns only current version
+10. Confirmation that old versions are not available",MM - CAMS-1863 / Canada Contractors Equipment Form ZC 6356,ToDo,Middle Market,CAMS-1863,High,Negative
+TC_1863_016,Manual,CAMS-1863_OldVersion_NotInSelection,Verify old version of ZC 6356 form is NOT available in form selection dropdown,"1. Create a new submission in UWD
+2. Navigate to Inland Marine LOB
+3. Navigate to Forms screen
+4. Click on form selection dropdown for Inland Marine
+5. Review all forms available in dropdown
+6. Search for ZC 6356 in list
+7. Verify only latest version appears
+8. Check for any deprecated versions
+9. Try to manually select old version if available
+10. Confirm selection error or unavailability","1. New submission created
+2. Inland Marine LOB configured
+3. Forms screen displays
+4. Form selection dropdown opens
+5. All available forms are listed
+6. ZC 6356 appears in dropdown
+7. Only ZC 6356 (03/25 edition) is visible
+8. No deprecated or old versions listed
+9. If user tries to select old version, system prevents selection
+10. Error message displays or old version is grayed out/unavailable",MM - CAMS-1863 / Canada Contractors Equipment Form ZC 6356,ToDo,Middle Market,CAMS-1863,High,Negative
+TC_1863_017,Manual,CAMS-1863_FormNotAttachedWithoutIM,Verify ZC 6356 form is NOT auto-attached when Inland Marine LOB is not selected,"1. Create a new submission in UWD
+2. Navigate to Line selection screen
+3. Deselect or do NOT select Inland Marine LOB
+4. Configure only other LOBs (GL, UMB, Property, Financial Lines)
+5. Navigate to Forms screen
+6. Review attached forms
+7. Verify ZC 6356 form is not present
+8. Confirm form is not auto-attached
+9. Try to manually add ZC 6356 form
+10. Verify system prevents attachment or shows error message","1. New submission created successfully
+2. Line selection screen displays
+3. Inland Marine LOB is NOT selected
+4. Other LOBs are configured without Inland Marine
+5. Forms screen displays
+6. Forms attached show only those for selected LOBs
+7. ZC 6356 form is NOT in attached forms list
+8. Form is confirmed not auto-attached
+9. User attempts manual addition of ZC 6356
+10. System displays error or prevents addition (ZC 6356 only applies to Inland Marine)",MM - CAMS-1863 / Canada Contractors Equipment Form ZC 6356,ToDo,Middle Market,CAMS-1863,Medium,Negative
+7,,,,2. Create a Domestic Renewal submission,2. User should be able to create a renewal submission successfully,,,,,,
+7,,,,3. Navigate to Inland Marine LOB screen,3. User should be able to view Inland Marine LOB with renewed coverage,,,,,,
+7,,,,4. Verify ZC 6356 is present from prior policy,4. Form should be carried forward with 03/25 edition,,,,,,
+7,,,,5. Complete mandatory fields,5. All mandatory fields should be filled successfully,,,,,,
+7,,,,6. Price the renewal,6. Pricing should complete successfully,,,,,,
+7,,,,7. Generate Quote,7. Quote should display ZC 6356 with 03/25 edition,,,,,,
+7,,,,8. Bind and Issue Renewal,8. Binding and issuance should succeed with correct form edition,,,,,,
+8,Manual,TC08_Verify Produced Renewal with ZC 6356_Inland Marine_Renewal_Produced_R1R2R3,The objective of this test case is to validate that ZC 6356 form with 03/25 edition is correctly maintained in Produced Renewal transaction,1. Navigate to Phoenix submission creation screen,1. User should be able to view the submission creation screen,Inland Marine/CAMS-1863 Renewal Produced,ToDo,Middle Market,CAMS-1863,High,Positive
+8,,,,2. Create a Produced Renewal submission,2. User should be able to create a produced renewal submission successfully,,,,,,
+8,,,,3. Navigate to Inland Marine LOB screen,3. User should be able to view Inland Marine LOB,,,,,,
+8,,,,4. Verify ZC 6356 with 03/25 edition,4. Form should display with correct edition metadata in Produced scope,,,,,,
+8,,,,5. Complete mandatory fields,5. All mandatory fields should be filled successfully,,,,,,
+8,,,,6. Price the renewal,6. Pricing should complete with correct form version,,,,,,
+8,,,,7. Generate Quote and documents,7. Quote and documents should show ZC 6356 with 03/25 edition,,,,,,
+8,,,,8. Bind and Issue,8. Binding and issuance should maintain form edition correctly,,,,,,
+9,Manual,TC09_Verify Reinstate with ZC 6356_Inland Marine_Reinstate_Domestic_R1R2R3,The objective of this test case is to validate that ZC 6356 form with 03/25 edition works correctly in Reinstate transaction,1. Navigate to Phoenix submission creation screen,1. User should be able to view the submission creation screen,Inland Marine/CAMS-1863 Reinstate,ToDo,Middle Market,CAMS-1863,High,Positive
+9,,,,2. Create a Domestic Reinstate submission,2. User should be able to create a reinstate submission successfully,,,,,,
+9,,,,3. Navigate to Inland Marine LOB screen,3. User should be able to view Inland Marine LOB,,,,,,
+9,,,,4. Verify ZC 6356 is present,4. Form should be available with 03/25 edition,,,,,,
+9,,,,5. Complete mandatory fields,5. All mandatory fields should be filled successfully,,,,,,
+9,,,,6. Price the submission,6. Pricing should complete successfully,,,,,,
+9,,,,7. Quote and Bind,7. Quote and binding should show ZC 6356 with 03/25 edition,,,,,,
+9,,,,8. Issue the reinstated policy,8. Issued policy should contain form with correct edition,,,,,,
+10,Manual,TC10_Verify Rewrite with ZC 6356_Inland Marine_Rewrite_Domestic_R1R2R3,The objective of this test case is to validate that ZC 6356 form with 03/25 edition works correctly in Rewrite transaction,1. Navigate to Phoenix submission creation screen,1. User should be able to view the submission creation screen,Inland Marine/CAMS-1863 Rewrite,ToDo,Middle Market,CAMS-1863,High,Positive
+10,,,,2. Create a Domestic Rewrite submission,2. User should be able to create a rewrite submission successfully,,,,,,
+10,,,,3. Navigate to Inland Marine LOB screen,3. User should be able to view Inland Marine LOB,,,,,,
+10,,,,4. Select or verify ZC 6356,4. Form should be selected/verified with 03/25 edition,,,,,,
+10,,,,5. Complete mandatory fields,5. All mandatory fields should be filled successfully,,,,,,
+10,,,,6. Price the submission,6. Pricing should complete successfully,,,,,,
+10,,,,7. Generate Quote,7. Quote should display ZC 6356 with 03/25 edition,,,,,,
+10,,,,8. Bind and Issue,8. Binding and issuance should succeed with correct form edition,,,,,,
+11,Manual,TC11_Verify Rewrite OOS with ZC 6356_Inland Marine_Rewrite OOS_Domestic_R1R2R3,The objective of this test case is to validate that ZC 6356 form with 03/25 edition works correctly in Rewrite Out of Sequence transaction,1. Navigate to Phoenix submission creation screen,1. User should be able to view the submission creation screen,Inland Marine/CAMS-1863 Rewrite OOS,ToDo,Middle Market,CAMS-1863,High,Positive
+11,,,,2. Create a Domestic Rewrite OOS submission,2. User should be able to create a rewrite OOS submission successfully,,,,,,
+11,,,,3. Navigate to Inland Marine LOB screen,3. User should be able to view Inland Marine LOB,,,,,,
+11,,,,4. Select ZC 6356 for Rewrite OOS,4. Form should be selected with 03/25 edition,,,,,,
+11,,,,5. Complete mandatory fields,5. All mandatory fields should be filled successfully,,,,,,
+11,,,,6. Price the submission,6. Pricing should complete successfully,,,,,,
+11,,,,7. Generate Quote and Bind,7. Quote and binding should show ZC 6356 with 03/25 edition,,,,,,
+11,,,,8. Issue the policy,8. Issued policy should contain form with correct edition,,,,,,
+12,Manual,TC12_Verify Backdated New Business with ZC 6356_Inland Marine_Backdated NB_Domestic_R1R3,The objective of this test case is to validate that ZC 6356 form displays with 03/25 edition even for Backdated New Business transaction,1. Navigate to Phoenix submission creation screen,1. User should be able to view the submission creation screen,Inland Marine/CAMS-1863 Backdated NB,ToDo,Middle Market,CAMS-1863,High,Positive
+12,,,,2. Create a Backdated New Business submission with earlier effective date,2. User should be able to create a backdated NB submission successfully,,,,,,
+12,,,,3. Navigate to Inland Marine LOB screen,3. User should be able to view Inland Marine LOB,,,,,,
+12,,,,4. Select ZC 6356 Coverage,4. Form should be selected and displayed,,,,,,
+12,,,,5. Verify form edition despite backdated effective date,5. Form should still display Edition: 03/25 (current/latest edition),,,,,,
+12,,,,6. Complete mandatory fields,6. All mandatory fields should be filled,,,,,,
+12,,,,7. Price and Quote,7. Pricing and quote should show 03/25 edition,,,,,,
+12,,,,8. Bind and Issue,8. Binding and issuance should maintain latest form edition,,,,,,
+13,Manual,TC13_Verify Backdated Renewal with ZC 6356_Inland Marine_Backdated Renewal_Domestic_R1R3,The objective of this test case is to validate that ZC 6356 form displays with 03/25 edition in Backdated Renewal transaction,1. Navigate to Phoenix submission creation screen,1. User should be able to view the submission creation screen,Inland Marine/CAMS-1863 Backdated Renewal,ToDo,Middle Market,CAMS-1863,High,Positive
+13,,,,2. Create a Backdated Renewal submission,2. User should be able to create a backdated renewal successfully,,,,,,
+13,,,,3. Navigate to Inland Marine LOB screen,3. User should be able to view Inland Marine LOB,,,,,,
+13,,,,4. Verify ZC 6356 with backdated effective date,4. Form should display with Edition: 03/25 despite backdated date,,,,,,
+13,,,,5. Complete mandatory fields,5. All mandatory fields should be filled successfully,,,,,,
+13,,,,6. Price the submission,6. Pricing should complete with latest form edition,,,,,,
+13,,,,7. Generate Quote,7. Quote should show ZC 6356 with 03/25 edition,,,,,,
+13,,,,8. Bind and Issue,8. Binding and issuance should succeed with latest form edition,,,,,,
+14,Manual,TC14_Verify Form Versioning Information_Inland Marine_New Business_Domestic_R3,The objective of this test case is to validate that ZC 6356 form displays complete versioning metadata including edition date 03/25,1. Navigate to Phoenix submission creation screen,1. User should be able to view the submission creation screen,Inland Marine/CAMS-1863 Metadata,ToDo,Middle Market,CAMS-1863,High,Positive
+14,,,,2. Create a Domestic submission with Inland Marine LOB,2. User should be able to create a submission successfully,,,,,,
+14,,,,3. Navigate to Inland Marine LOB screen,3. User should be able to view Inland Marine LOB,,,,,,
+14,,,,4. Select ZC 6356 Coverage,4. Form should be selected,,,,,,
+14,,,,5. Inspect form metadata in documents section,5. Metadata should display: Form Name: ""ZC 6356 - Contractors Equipment"",,,,,,
+14,,,,6. Verify edition date information,6. Metadata should show Edition: 03/25,,,,,,
+14,,,,7. Verify release date information,7. Metadata should show Released: August (per requirements),,,,,,
+14,,,,8. Verify version status,8. Metadata should indicate Version: Latest,,,,,,
+15,Manual,TC15_Verify Form NOT Auto-Attached Without Selection_Inland Marine_New Business_Domestic_R2,The objective of this test case is to validate that ZC 6356 form does NOT auto-attach if coverage is not explicitly selected,1. Navigate to Phoenix submission creation screen,1. User should be able to view the submission creation screen,Inland Marine/CAMS-1863 No Auto-Attach,ToDo,Middle Market,CAMS-1863,High,Positive
+15,,,,2. Create a Domestic submission with Inland Marine LOB,2. User should be able to create a submission successfully,,,,,,
+15,,,,3. Navigate to Inland Marine LOB screen,3. User should be able to view Inland Marine LOB,,,,,,
+15,,,,4. Do NOT select ZC 6356 Coverage,4. ZC 6356 should NOT be selected,,,,,,
+15,,,,5. Complete other mandatory fields without ZC 6356,5. Other mandatory fields should be filled successfully,,,,,,
+15,,,,6. Navigate to documents section,6. Documents section should be empty (no ZC 6356 attached),,,,,,
+15,,,,7. Verify no unintended attachments,7. Only selected forms should appear; ZC 6356 should NOT be present,,,,,,
+16,Manual,TC16_Verify Pricing and Binding Workflow with ZC 6356_Inland Marine_New Business_Domestic_R1R2R3,The objective of this test case is to validate that Pricing Approval and Binding processes include form ZC 6356 with 03/25 edition,1. Navigate to Phoenix submission creation screen,1. User should be able to view the submission creation screen,Inland Marine/CAMS-1863 Pricing,ToDo,Middle Market,CAMS-1863,High,Positive
+16,,,,2. Create a Domestic submission with Inland Marine LOB,2. User should be able to create a submission successfully,,,,,,
+16,,,,3. Select ZC 6356 Contractors Equipment Coverage,3. Form should be selected and attached,,,,,,
+16,,,,4. Complete all mandatory Inland Marine fields,4. All mandatory fields should be filled successfully,,,,,,
+16,,,,5. Click Price button,5. Pricing calculation should initiate successfully,,,,,,
+16,,,,6. Verify form in payload before approval,6. Payload should include ZC 6356 with Edition: 03/25,,,,,,
+16,,,,7. Approve Underwriter rules if required,7. UW rule approvals should succeed with form present,,,,,,
+16,,,,8. Verify Quote shows ZC 6356,8. Quote document should display form with correct edition,,,,,,
+16,,,,9. Complete Binding process,9. Binder should include ZC 6356 with 03/25 edition,,,,,,
+17,Manual,TC17_Verify ZC 6356 in Multiple LOB Context_Inland Marine_New Business_Domestic_R3,The objective of this test case is to validate that ZC 6356 Inland Marine form does not affect other LOBs when multiple LOBs are selected,1. Navigate to Phoenix submission creation screen,1. User should be able to view the submission creation screen,Inland Marine/CAMS-1863 Multiple LOB,ToDo,Middle Market,CAMS-1863,High,Positive
+17,,,,2. Create a Domestic submission,2. User should be able to create a submission successfully,,,,,,
+17,,,,3. Navigate to line selection and select multiple LOBs (Property + Inland Marine),3. User should be able to select multiple LOBs,,,,,,
+17,,,,4. Navigate to Inland Marine LOB screen,4. User should be able to configure Inland Marine LOB,,,,,,
+17,,,,5. Select ZC 6356 Coverage in Inland Marine,5. ZC 6356 should be selected for Inland Marine only,,,,,,
+17,,,,6. Verify ZC 6356 appears only in Inland Marine documents,6. Documents should show ZC 6356 only in IM section; NOT in Property section,,,,,,
+17,,,,7. Navigate to Property LOB,7. Property LOB should be independent with separate forms,,,,,,
+17,,,,8. Verify isolation,8. Form selection in IM should not impact other LOBs,,,,,,
+18,Manual,TC18_Verify Form Repository Path Access_Inland Marine_New Business_Domestic_R1,The objective of this test case is to validate that ZC 6356 form is accessible from the correct test repository path with proper metadata,1. Navigate to Phoenix submission creation screen,1. User should be able to view the submission creation screen,Inland Marine/CAMS-1863 Repository,ToDo,Middle Market,CAMS-1863,High,Positive
+18,,,,2. Create a Domestic submission with Inland Marine LOB,2. User should be able to create a submission successfully,,,,,,
+18,,,,3. Select ZC 6356 Coverage,3. Form should be selected and attached,,,,,,
+18,,,,4. Navigate to documents section,4. Documents section should list attached forms,,,,,,
+18,,,,5. Verify form repository reference,5. Form should reference: ""Inland Marine/CAMS-1863 Form Display"",,,,,,
+18,,,,6. Verify form accessibility,6. Form should be accessible from defined repository path,,,,,,
+18,,,,7. Verify metadata completeness,7. Form metadata should include complete file path and versioning information,,,,,,
+19,Manual,TC19_Verify UI Form Selection Dropdown_Inland Marine_New Business_Domestic_R3,The objective of this test case is to validate that ZC 6356 appears correctly in the form selection dropdown with edition label,1. Navigate to Phoenix submission creation screen,1. User should be able to view the submission creation screen,Inland Marine/CAMS-1863 UI Dropdown,ToDo,Middle Market,CAMS-1863,High,Positive
+19,,,,2. Create a Domestic submission with Inland Marine LOB,2. User should be able to create a submission successfully,,,,,,
+19,,,,3. Navigate to Inland Marine LOB screen,3. User should be able to view Inland Marine LOB screen,,,,,,
+19,,,,4. Click on coverage/form selection dropdown,4. Dropdown should open and display available forms,,,,,,
+19,,,,5. Verify ZC 6356 is present in dropdown,5. ZC 6356 should be visible in the dropdown list,,,,,,
+19,,,,6. Verify form label includes edition,6. ZC 6356 should display as ""ZC 6356 - Contractors Equipment (Edition: 03/25)"",,,,,,
+19,,,,7. Verify form is selectable,7. User should be able to click and select ZC 6356 from dropdown,,,,,,
+19,,,,8. Verify old versions NOT in dropdown,8. Dropdown should NOT contain deprecated form versions,,,,,,
+20,Manual,TC20_Verify UI Form Display in Coverage Screen_Inland Marine_New Business_Domestic_R3,The objective of this test case is to validate that ZC 6356 displays with correct information in the coverage selection screen,1. Navigate to Phoenix submission creation screen,1. User should be able to view the submission creation screen,Inland Marine/CAMS-1863 UI Coverage Screen,ToDo,Middle Market,CAMS-1863,High,Positive
+20,,,,2. Create a Domestic submission with Inland Marine LOB,2. User should be able to create a submission successfully,,,,,,
+20,,,,3. Navigate to Inland Marine LOB configuration screen,3. User should be able to view coverage options,,,,,,
+20,,,,4. Locate ZC 6356 in coverage list,4. ZC 6356 should be visible with all required information,,,,,,
+20,,,,5. Verify form name display,5. Form should display: ""ZC 6356 - Contractors Equipment"",,,,,,
+20,,,,6. Verify edition display,6. Edition should display: ""Edition: 03/25"",,,,,,
+20,,,,7. Verify form status is Active,7. Form should show status as ""Active"" (not deprecated),,,,,,
+20,,,,8. Verify form is enabled for selection,8. ZC 6356 should be enabled and clickable for user selection,,,,,,
+26,Manual,TC26_NEGATIVE_Old Form Version Auto-Attachment_Inland Marine_New Business_Domestic_R2,"The objective of this test case is to validate that the system does NOT attach old/deprecated form versions, only latest 03/25 edition",1. Navigate to Phoenix submission creation screen,1. User should be able to view the submission creation screen,Inland Marine/CAMS-1863 Negative Version,ToDo,Middle Market,CAMS-1863,High,Negative
+26,,,,2. Create a Domestic submission with Inland Marine LOB,2. User should be able to create a submission successfully,,,,,,
+26,,,,3. Navigate to Inland Marine LOB screen,3. User should be able to view Inland Marine LOB,,,,,,
+26,,,,4. Select ZC 6356 Coverage,4. Form selection should trigger attachment process,,,,,,
+26,,,,5. Navigate to documents section,5. Documents should show attached forms,,,,,,
+26,,,,6. Verify ONLY 03/25 edition is attached,6. OLD form versions should NOT be present in documents,,,,,,
+26,,,,7. Confirm no version downgrade,7. System should maintain only latest edition; older versions must be rejected,,,,,,
+27,Manual,TC27_NEGATIVE_Incorrect Edition Date in Payload_Inland Marine_New Business_Domestic_R1,"The objective of this test case is to validate that system does NOT send incorrect edition dates in payload, must be 03/25 only",1. Navigate to Phoenix submission creation screen,1. User should be able to view the submission creation screen,Inland Marine/CAMS-1863 Negative Payload,ToDo,Middle Market,CAMS-1863,High,Negative
+27,,,,2. Create a Domestic submission with Inland Marine LOB,2. User should be able to create a submission successfully,,,,,,
+27,,,,3. Select ZC 6356 Coverage,3. Form should be selected,,,,,,
+27,,,,4. Complete mandatory fields,4. All mandatory fields should be filled,,,,,,
+27,,,,5. Price the submission,5. Pricing should complete successfully,,,,,,
+27,,,,6. Inspect system payload for edition date,6. Payload MUST contain ONLY ""editionDate: 03/25"",,,,,,
+27,,,,7. Verify no incorrect dates in payload,7. Payload should NOT contain any edition dates other than 03/25,,,,,,
+28,Manual,TC28_NEGATIVE_Form Display Missing Edition Date_Inland Marine_New Business_Domestic_R3,"The objective of this test case is to validate that system DOES NOT display form without edition date, always shows 03/25",1. Navigate to Phoenix submission creation screen,1. User should be able to view the submission creation screen,Inland Marine/CAMS-1863 Negative Display,ToDo,Middle Market,CAMS-1863,High,Negative
+28,,,,2. Create a Domestic submission with Inland Marine LOB,2. User should be able to create a submission successfully,,,,,,
+28,,,,3. Navigate to Inland Marine LOB screen,3. User should be able to view Inland Marine LOB,,,,,,
+28,,,,4. Select ZC 6356 Coverage,4. Form should be selected for attachment,,,,,,
+28,,,,5. Navigate to documents section,5. Documents should display attached forms with details,,,,,,
+28,,,,6. Verify form displays with edition date,6. Form MUST display with Edition: 03/25 (if missing = FAILURE),,,,,,
+28,,,,7. Confirm edition date is visible,7. Edition date should be clearly visible in form details,,,,,,
+29,Manual,TC29_NEGATIVE_Form Attachment Without Selection_Inland Marine_New Business_Domestic_R2,"The objective of this test case is to validate that ZC 6356 does NOT auto-attach without explicit coverage selection, preventing unintended attachments",1. Navigate to Phoenix submission creation screen,1. User should be able to view the submission creation screen,Inland Marine/CAMS-1863 Negative No Selection,ToDo,Middle Market,CAMS-1863,High,Negative
+29,,,,2. Create a Domestic submission with Inland Marine LOB,2. User should be able to create a submission successfully,,,,,,
+29,,,,3. Navigate to Inland Marine LOB screen,3. User should be able to view Inland Marine LOB screen,,,,,,
+29,,,,4. Do NOT explicitly select ZC 6356 Coverage,4. ZC 6356 should remain unselected,,,,,,
+29,,,,5. Complete other mandatory fields,5. Other mandatory fields should be filled without ZC 6356,,,,,,
+29,,,,6. Navigate to documents section,6. Documents should show attached forms list,,,,,,
+29,,,,7. Verify ZC 6356 NOT attached,7. ZC 6356 should NOT be present in documents (only selected forms),,,,,,
+30,Manual,TC30_NEGATIVE_Multiple Form Versions in Documents_Inland Marine_New Business_Domestic_R2,"The objective of this test case is to validate that system does NOT store multiple versions of ZC 6356, only one latest version",1. Navigate to Phoenix submission creation screen,1. User should be able to view the submission creation screen,Inland Marine/CAMS-1863 Negative Multiple,ToDo,Middle Market,CAMS-1863,High,Negative
+30,,,,2. Create a Domestic submission with Inland Marine LOB,2. User should be able to create a submission successfully,,,,,,
+30,,,,3. Select ZC 6356 Coverage,3. Form should be selected and attached,,,,,,
+30,,,,4. Navigate to documents section,4. Documents section should display attached forms,,,,,,
+30,,,,5. Count ZC 6356 instances,5. There should be EXACTLY ONE instance of ZC 6356,,,,,,
+30,,,,6. Verify no duplicate forms,6. System should NOT contain duplicate or multiple versions,,,,,,
+30,,,,7. Confirm single attachment,7. Only latest 03/25 edition should exist in documents,,,,,,
+31,Manual,TC31_NEGATIVE_Invalid Form Version in Quote_Inland Marine_New Business_Domestic_R1,"The objective of this test case is to validate that Quote document never displays deprecated/invalid form versions, only latest 03/25",1. Navigate to Phoenix submission creation screen,1. User should be able to view the submission creation screen,Inland Marine/CAMS-1863 Negative Quote,ToDo,Middle Market,CAMS-1863,High,Negative
+31,,,,2. Create a Domestic submission with Inland Marine LOB,2. User should be able to create a submission successfully,,,,,,
+31,,,,3. Select ZC 6356 Coverage,3. Form should be selected and attached,,,,,,
+31,,,,4. Complete mandatory fields and Price,4. Pricing should complete successfully,,,,,,
+31,,,,5. Generate Quote document,5. Quote generation should succeed,,,,,,
+31,,,,6. Inspect quote for form version,6. Quote should display ZC 6356 with Edition: 03/25 ONLY,,,,,,
+31,,,,7. Verify no old versions in quote,7. Quote must NOT show any deprecated form versions,,,,,,
+32,Manual,TC32_NEGATIVE_Form Edition Mismatch Across Documents_Inland Marine_New Business_Domestic_R1R3,"The objective of this test case is to validate that form edition is consistent across all documents (Quote, Binder, Policy), all must show 03/25",1. Navigate to Phoenix submission creation screen,1. User should be able to view the submission creation screen,Inland Marine/CAMS-1863 Negative Mismatch,ToDo,Middle Market,CAMS-1863,High,Negative
+32,,,,2. Create a Domestic submission with Inland Marine LOB,2. User should be able to create a submission successfully,,,,,,
+32,,,,3. Select ZC 6356 Coverage,3. Form should be selected,,,,,,
+32,,,,4. Complete mandatory fields,4. All mandatory fields should be filled,,,,,,
+32,,,,5. Price and generate Quote,5. Quote should show ZC 6356 with Edition: 03/25,,,,,,
+32,,,,6. Bind the Policy,6. Binder document should also show ZC 6356 with Edition: 03/25,,,,,,
+32,,,,7. Issue the Policy,7. Issued policy should display ZC 6356 with Edition: 03/25,,,,,,
+32,,,,8. Compare editions across documents,8. ALL documents (Quote, Binder, Policy) MUST have IDENTICAL edition (03/25),,,,,,
+33,Manual,TC33_NEGATIVE_Form Payload Missing Version Metadata_Inland Marine_New Business_Domestic_R1,"The objective of this test case is to validate that system does NOT send payload without complete form metadata, all required fields must be present",1. Navigate to Phoenix submission creation screen,1. User should be able to view the submission creation screen,Inland Marine/CAMS-1863 Negative Metadata,ToDo,Middle Market,CAMS-1863,High,Negative
+33,,,,2. Create a Domestic submission with Inland Marine LOB,2. User should be able to create a submission successfully,,,,,,
+33,,,,3. Select ZC 6356 Coverage,3. Form should be selected,,,,,,
+33,,,,4. Complete mandatory fields,4. All mandatory fields should be filled,,,,,,
+33,,,,5. Price the submission,5. Pricing should trigger payload generation,,,,,,
+33,,,,6. Verify payload structure,6. Payload MUST include: formName, formNumber, editionDate, version,,,,,,
+33,,,,7. Verify no missing metadata,7. If any metadata field is missing = system FAILURE,,,,,,
+34,Manual,TC34_NEGATIVE_Pricing Proceeds Without Form Validation_Inland Marine_New Business_Domestic_R1,"The objective of this test case is to validate that system does NOT allow pricing if required form validation fails, prevents invalid pricing",1. Navigate to Phoenix submission creation screen,1. User should be able to view the submission creation screen,Inland Marine/CAMS-1863 Negative Pricing,ToDo,Middle Market,CAMS-1863,High,Negative
+34,,,,2. Create a Domestic submission with Inland Marine LOB,2. User should be able to create a submission successfully,,,,,,
+34,,,,3. Select Inland Marine LOB,3. User should navigate to Inland Marine LOB screen,,,,,,
+34,,,,4. Intentionally skip form selection/validation,4. Form validation should be required but skipped,,,,,,
+34,,,,5. Attempt to Price the submission,5. System should REJECT pricing attempt with error message,,,,,,
+34,,,,6. Verify validation error occurs,6. Error should indicate missing form or validation failure,,,,,,
+34,,,,7. Confirm pricing blocked,7. Pricing process should NOT complete without valid form,,,,,,
+35,Manual,TC35_NEGATIVE_Binding Without Form Attachment_Inland Marine_New Business_Domestic_R2,"The objective of this test case is to validate that system does NOT allow binding if required ZC 6356 form not attached, prevents invalid binding",1. Navigate to Phoenix submission creation screen,1. User should be able to view the submission creation screen,Inland Marine/CAMS-1863 Negative Binding,ToDo,Middle Market,CAMS-1863,High,Negative
+35,,,,2. Create a Domestic submission with Inland Marine LOB,2. User should be able to create a submission successfully,,,,,,
+35,,,,3. Select ZC 6356 Coverage,3. Form should be selected for attachment,,,,,,
+35,,,,4. Complete mandatory fields,4. All mandatory fields should be filled,,,,,,
+35,,,,5. Price and Quote,5. Pricing and quote generation should succeed,,,,,,
+35,,,,6. Intentionally remove ZC 6356 from documents,6. Form should be removed/unattached,,,,,,
+35,,,,7. Attempt to Bind,7. System should REJECT binding with error (missing required form),,,,,,
+35,,,,8. Confirm binding blocked,8. Binding process should NOT complete without form attachment,,,,,,
+36,Manual,TC36_NEGATIVE_Policy Issuance Missing Form_Inland Marine_New Business_Domestic_R1R3,"The objective of this test case is to validate that Issued Policy always contains ZC 6356 form, missing form should prevent or indicate issuance error",1. Navigate to Phoenix submission creation screen,1. User should be able to view the submission creation screen,Inland Marine/CAMS-1863 Negative Issuance,ToDo,Middle Market,CAMS-1863,High,Negative
+36,,,,2. Create a Domestic submission with Inland Marine LOB,2. User should be able to create a submission successfully,,,,,,
+36,,,,3. Select ZC 6356 Coverage,3. Form should be selected and attached,,,,,,
+36,,,,4. Complete mandatory fields,4. All mandatory fields should be filled,,,,,,
+36,,,,5. Price and Quote,5. Pricing and quote generation should succeed,,,,,,
+36,,,,6. Bind the policy,6. Binding should complete successfully,,,,,,
+36,,,,7. Issue the Policy,7. Policy issuance should complete,,,,,,
+36,,,,8. Navigate to Forms section,8. ZC 6356 with Edition: 03/25 MUST be present in forms section (if missing = FAILURE),,,,,,
+37,Manual,TC37_NEGATIVE_Form Replacement with Old Version_Inland Marine_Policy Change_Domestic_R1,"The objective of this test case is to validate that system does NOT allow replacing 03/25 edition with old form version during Policy Change",1. Navigate to Phoenix submission creation screen,1. User should be able to view the submission creation screen,Inland Marine/CAMS-1863 Negative Replace,ToDo,Middle Market,CAMS-1863,High,Negative
+37,,,,2. Create a Policy Change submission,2. User should be able to create a PC submission successfully,,,,,,
+37,,,,3. Navigate to Inland Marine LOB screen,3. User should be able to view Inland Marine LOB with existing ZC 6356,,,,,,
+37,,,,4. Verify ZC 6356 currently has 03/25 edition,4. Existing form should show Edition: 03/25,,,,,,
+37,,,,5. Attempt to replace form with old version,5. System should prevent or reject replacement attempt,,,,,,
+37,,,,6. Verify system maintains 03/25 edition,6. System should keep 03/25 edition; downgrade should NOT be allowed,,,,,,
+37,,,,7. Confirm form version integrity,7. Form version should remain as latest 03/25 edition,,,,,,
+38,Manual,TC38_NEGATIVE_Form Removal During Renewal_Inland Marine_Renewal_Domestic_R2R3,"The objective of this test case is to validate that ZC 6356 form is NOT removed/unattached during Renewal workflow, maintains continuity",1. Navigate to Phoenix submission creation screen,1. User should be able to view the submission creation screen,Inland Marine/CAMS-1863 Negative Removal,ToDo,Middle Market,CAMS-1863,High,Negative
+38,,,,2. Create a Renewal submission,2. User should be able to create a renewal submission successfully,,,,,,
+38,,,,3. Navigate to Inland Marine LOB screen,3. User should be able to view Inland Marine LOB with ZC 6356 from prior policy,,,,,,
+38,,,,4. Verify ZC 6356 is initially attached,4. Form should be present with Edition: 03/25 from prior policy,,,,,,
+38,,,,5. Attempt to proceed without the form,5. System should require or maintain form attachment,,,,,,
+38,,,,6. Complete other mandatory fields,6. All mandatory fields should be filled successfully,,,,,,
+38,,,,7. Price and Quote,7. Pricing and quote should succeed with form present,,,,,,
+38,,,,8. Verify form remains in renewal,8. ZC 6356 should NOT be removed; must appear in quote and final policy,,,,,,
+39,Manual,TC39_NEGATIVE_Produced Scope Form Version Mismatch_Inland Marine_New Business_Produced_R1R3,"The objective of this test case is to validate that Produced scope uses SAME 03/25 edition, NOT different version from Domestic",1. Navigate to Phoenix submission creation screen,1. User should be able to view the submission creation screen,Inland Marine/CAMS-1863 Negative Produced Mismatch,ToDo,Middle Market,CAMS-1863,High,Negative
+39,,,,2. Create a Produced submission with Inland Marine LOB,2. User should be able to create a Produced submission successfully,,,,,,
+39,,,,3. Navigate to Inland Marine LOB screen,3. User should be able to view Inland Marine LOB,,,,,,
+39,,,,4. Select ZC 6356 Coverage,4. Form should be selected,,,,,,
+39,,,,5. Verify form edition in Produced scope,5. Form should display Edition: 03/25 (SAME as Domestic),,,,,,
+39,,,,6. Verify NO different version in Produced,6. Produced scope must NOT use different edition from Domestic,,,,,,
+39,,,,7. Complete pricing workflow,7. Pricing should use correct 03/25 edition for Produced scope,,,,,,
+39,,,,8. Verify payload contains same edition,8. Payload for Produced scope must show Edition: 03/25,,,,,,
+40,Manual,TC40_NEGATIVE_UI Validation Invalid Form Selection_Inland Marine_New Business_Domestic_R3,"The objective of this test case is to validate that system prevents selection of deprecated/invalid form versions in UI, only allows 03/25",1. Navigate to Phoenix submission creation screen,1. User should be able to view the submission creation screen,Inland Marine/CAMS-1863 Negative Invalid UI,ToDo,Middle Market,CAMS-1863,High,Negative
+40,,,,2. Create a Domestic submission with Inland Marine LOB,2. User should be able to create a submission successfully,,,,,,
+40,,,,3. Navigate to Inland Marine LOB screen,3. User should be able to view coverage selection options,,,,,,
+40,,,,4. Inspect form dropdown for deprecated versions,4. Dropdown should display only valid forms,,,,,,
+40,,,,5. Verify ZC 6356 03/25 is selectable,5. ZC 6356 (03/25 Edition) should be available and clickable,,,,,,
+40,,,,6. Verify old versions NOT selectable,6. Old/deprecated form versions should be GREYED OUT or NOT present,,,,,,
+40,,,,7. Attempt to select old version,7. System should prevent selection of invalid/old versions,,,,,,
+40,,,,8. Confirm UI validation works,8. UI should enforce that only 03/25 edition can be selected,,,,,,

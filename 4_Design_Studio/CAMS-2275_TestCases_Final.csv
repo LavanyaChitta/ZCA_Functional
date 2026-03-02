@@ -1,0 +1,149 @@
+TC ID,Test Type,Test Case Name,Description,Action,Expected Result,Test Repository Path,Status,Components,User Story,Priority
+TC_2275_001,Manual,TC01_Fleet NB - Per Day Limit Field Not Mandatory - AB-SEF20U - English,"Verify that Per Day Limit field is not mandatory for 20 series forms (Fleet) during New Business transaction","1. Create submission in UWD for Commercial Auto - Fleet
+2. Initiate and purge to Phoenix
+3. Navigate to Line selection screen
+4. Verify product details and confirm 20 series form (AB-SEF20U) is selected
+5. Navigate to the form fields screen showing Per Day Limit field
+6. Leave Per Day Limit field blank (do not enter any value)
+7. Proceed through remaining mandatory fields
+8. Price the submission
+9. Quote the submission","1. User should be able to create a Commercial Auto - Fleet submission
+2. Line selection screen should display the 20 series form option
+3. Per Day Limit field should be visible but NOT marked as mandatory (no red asterisk)
+4. User should be able to proceed without entering a value in Per Day Limit field
+5. Pricing and Quote should complete successfully
+6. No validation error should appear for blank Per Day Limit field",MM - November 2025 / CAMS-2275 / Fleet NB,ToDo,Commercial Auto - Fleet,CAMS-2275,High
+TC_2275_002,Manual,TC02_IRCA NB - Per Day Limit Field Not Mandatory - AB-SEF20U - English,"Verify that Per Day Limit field is not mandatory for 20 series forms (IRCA) during New Business transaction","1. Create submission in UWD for Commercial Auto - IRCA
+2. Initiate and purge to Phoenix
+3. Navigate to Line selection screen
+4. Verify product details and confirm 20 series form (AB-SEF20U) is selected
+5. Navigate to the form fields screen showing Per Day Limit field
+6. Leave Per Day Limit field blank (do not enter any value)
+7. Proceed through remaining mandatory fields
+8. Price the submission
+9. Quote the submission","1. User should be able to create a Commercial Auto - IRCA submission
+2. Line selection screen should display the 20 series form option
+3. Per Day Limit field should be visible but NOT marked as mandatory
+4. User should be able to proceed without entering a value in Per Day Limit field
+5. Pricing and Quote should complete successfully
+6. No validation error should appear for blank Per Day Limit field",MM - November 2025 / CAMS-2275 / IRCA NB,ToDo,Commercial Auto - IRCA,CAMS-2275,High
+TC_2275_003,Manual,TC03_Fleet NB - Per Day Limit Field Not Mandatory - FANB20G - French,"Verify that Per Day Limit field is not mandatory for FANB20G French form during Fleet New Business","1. Create submission in UWD for Commercial Auto - Fleet
+2. Set form language preference to French
+3. Initiate and purge to Phoenix
+4. Navigate to Line selection screen
+5. Verify FANB20G form is selected (French: FANB 20 G Extension De La Garantie ""Privation De Jouissance"")
+6. Navigate to the form fields screen showing Per Day Limit field
+7. Leave Per Day Limit field blank
+8. Proceed through remaining mandatory fields
+9. Price and Quote","1. User should be able to create a Commercial Auto - Fleet submission with French language
+2. FANB20G form should display in French
+3. Per Day Limit field should NOT be marked as mandatory
+4. User should proceed without entering Per Day Limit
+5. Pricing and Quote should complete successfully",MM - November 2025 / CAMS-2275 / Fleet NB French,ToDo,Commercial Auto - Fleet,CAMS-2275,High
+TC_2275_004,Manual,TC04_Fleet PC - Per Day Limit Field Not Mandatory - NSEF20U - English,"Verify that Per Day Limit field is not mandatory for 20 series forms (Fleet) during Policy Change transaction","1. Create and issue a base Commercial Auto - Fleet policy with NSEF20U form
+2. Initiate a Policy Change transaction
+3. Navigate to the form fields
+4. Verify Per Day Limit field is present
+5. Leave Per Day Limit field blank (remove any existing value if present)
+6. Proceed through remaining changes
+7. Price the Policy Change
+8. Quote the Policy Change","1. User should be able to initiate Policy Change transaction
+2. Per Day Limit field should NOT be marked as mandatory in Policy Change
+3. User should be able to clear/leave blank the Per Day Limit field
+4. Pricing and Quote should complete successfully
+5. No validation error should appear",MM - November 2025 / CAMS-2275 / Fleet PC,ToDo,Commercial Auto - Fleet,CAMS-2275,High
+TC_2275_005,Manual,TC05_IRCA PC - Per Day Limit Field Not Mandatory - OPCF20U - English,"Verify that Per Day Limit field is not mandatory for 20 series forms (IRCA) during Policy Change transaction","1. Create and issue a base Commercial Auto - IRCA policy with OPCF20U form
+2. Initiate a Policy Change transaction
+3. Navigate to the form fields
+4. Verify Per Day Limit field is present
+5. Leave Per Day Limit field blank
+6. Proceed through remaining changes
+7. Price the Policy Change
+8. Quote the Policy Change","1. User should be able to initiate Policy Change transaction for IRCA
+2. Per Day Limit field should NOT be marked as mandatory
+3. User should be able to leave Per Day Limit field blank
+4. Pricing and Quote should complete successfully
+5. No validation error should appear",MM - November 2025 / CAMS-2275 / IRCA PC,ToDo,Commercial Auto - IRCA,CAMS-2275,High
+TC_2275_006,Manual,TC06_Fleet Renewal - Per Day Limit Field Not Mandatory - SEF20U - English,"Verify that Per Day Limit field is not mandatory for 20 series forms during Fleet Renewal transaction","1. Create and issue a base Commercial Auto - Fleet policy with SEF20U form
+2. Initiate a Renewal transaction
+3. Navigate to the form fields
+4. Verify Per Day Limit field is present
+5. Leave Per Day Limit field blank
+6. Proceed through remaining fields
+7. Price the Renewal
+8. Quote the Renewal","1. User should be able to initiate Renewal transaction
+2. Per Day Limit field should NOT be marked as mandatory in Renewal
+3. User should be able to leave Per Day Limit field blank
+4. Pricing and Quote should complete successfully
+5. No validation error should appear",MM - November 2025 / CAMS-2275 / Fleet Renewal,ToDo,Commercial Auto - Fleet,CAMS-2275,High
+TC_2275_007,Manual,TC07_Fleet Rewrite - Per Day Limit Field Not Mandatory - NL SEF20U - English,"Verify that Per Day Limit field is not mandatory for 20 series forms during Fleet Rewrite transaction","1. Create and issue a base Commercial Auto - Fleet policy with NL SEF20U form
+2. Initiate a Rewrite transaction
+3. Navigate to the form fields
+4. Verify Per Day Limit field is present
+5. Leave Per Day Limit field blank
+6. Proceed through all mandatory fields
+7. Price the Rewrite
+8. Quote the Rewrite","1. User should be able to initiate Rewrite transaction
+2. Per Day Limit field should NOT be marked as mandatory
+3. User should be able to leave Per Day Limit field blank
+4. Pricing and Quote should complete successfully
+5. No validation error should appear",MM - November 2025 / CAMS-2275 / Fleet Rewrite,ToDo,Commercial Auto - Fleet,CAMS-2275,High
+TC_2275_008,Manual,TC08_Fleet PC OOS - Per Day Limit Field Not Mandatory - PE SEF20U - English,"Verify that Per Day Limit field is not mandatory for 20 series forms during Policy Change Out of Sequence","1. Create and issue a base Commercial Auto - Fleet policy with PE SEF20U form
+2. Initiate a Policy Change Out of Sequence (OOS) transaction
+3. Navigate to the form fields
+4. Verify Per Day Limit field is present
+5. Leave Per Day Limit field blank
+6. Proceed through remaining changes
+7. Price the Policy Change OOS
+8. Quote","1. User should be able to initiate Policy Change OOS
+2. Per Day Limit field should NOT be marked as mandatory
+3. User should be able to leave Per Day Limit blank
+4. Pricing and Quote should complete successfully",MM - November 2025 / CAMS-2275 / Fleet PC OOS,ToDo,Commercial Auto - Fleet,CAMS-2275,Medium
+TC_2275_009,Manual,TC09_UI Validation - Per Day Limit Field Not Required - Visual Indicator Absence,"Verify that Per Day Limit field does not display as mandatory (no red asterisk or required indicator)","1. Create a new Commercial Auto submission (Fleet or IRCA)
+2. Navigate to any 20 series form screen (e.g., AB-SEF20U, FANB20G, NSEF20U)
+3. Locate the Per Day Limit field
+4. Inspect the field for mandatory indicators","1. Per Day Limit field should be visible on the form
+2. Field should NOT have a red asterisk (*) indicating mandatory status
+3. Field should NOT have any text saying 'Required' or similar
+4. Field should be clearly marked as optional if any indicator is present",MM - November 2025 / CAMS-2275 / UI Validation,ToDo,Commercial Auto,CAMS-2275,High
+TC_2275_010,Manual,TC10_UI Validation - Submission Allowed Without Per Day Limit Entry,"Verify that user can proceed through submission process without entering Per Day Limit value","1. Create a Commercial Auto submission (Fleet)
+2. Navigate to form screen with Per Day Limit field
+3. Do NOT enter any value in Per Day Limit field
+4. Attempt to proceed to next screen or submit form
+5. Verify no blocking validation errors appear","1. User should be able to proceed without entering Per Day Limit
+2. No mandatory field validation error should appear for Per Day Limit field
+3. Form should accept the submission with blank Per Day Limit
+4. No error message like 'Per Day Limit is required' should appear",MM - November 2025 / CAMS-2275 / UI Validation,ToDo,Commercial Auto,CAMS-2275,High
+TC_2275_011,Manual,TC11_Document Validation - Printed Forms Show Blank Per Day Limit - Fleet NB,"Verify that when Per Day Limit is left blank, the printed form also displays blank for that field","1. Create and Issue a Commercial Auto - Fleet NB policy with AB-SEF20U form
+2. Leave Per Day Limit field blank during creation
+3. Complete all submission steps (Price, Quote, Bind, Issue)
+4. Navigate to Forms screen in Issued policy
+5. Download and view the printed form (AB-SEF20U)
+6. Inspect the Per Day Limit field in the printed document","1. Issued policy should be created successfully
+2. Forms screen should display all printed forms
+3. Downloaded form should display blank/empty in the Per Day Limit field
+4. No default or placeholder values should appear in Per Day Limit on printed form",MM - November 2025 / CAMS-2275 / Document Validation,ToDo,Commercial Auto,CAMS-2275,High
+TC_2275_012,Manual,TC12_Document Validation - Printed Forms Show Blank Per Day Limit - IRCA PC,"Verify that when Per Day Limit is left blank in Policy Change, the printed form also displays blank","1. Create and Issue a base Commercial Auto - IRCA policy
+2. Initiate a Policy Change transaction
+3. Leave Per Day Limit field blank during PC
+4. Complete Policy Change steps (Price, Quote, Bind, Issue)
+5. Navigate to Forms screen in updated policy
+6. Download and view the printed form
+7. Inspect the Per Day Limit field","1. Policy Change should be processed successfully
+2. Updated policy forms should display blank in Per Day Limit field
+3. No default values should populate in the printed Per Day Limit field",MM - November 2025 / CAMS-2275 / Document Validation,ToDo,Commercial Auto,CAMS-2275,High
+TC_2275_013,Manual,TC13_Negative Test - All 20 Series Forms Support Non-Mandatory Per Day Limit,"Verify non-mandatory Per Day Limit functionality across all 8 required forms","1. Create Commercial Auto submissions for each form:
+   - AB-SEF20U, FANB20G, NBEF20U, NL SEF20U, NSEF20U, OPCF20U, PE SEF20U, SEF20U
+2. For each form, navigate to form fields
+3. Leave Per Day Limit blank
+4. Attempt to proceed/submit","1. All 8 forms should allow blank Per Day Limit
+2. No form should enforce Per Day Limit as mandatory
+3. All submissions should proceed successfully without validation errors
+4. Consistent behavior across all 20 series forms",MM - November 2025 / CAMS-2275 / All Forms,ToDo,Commercial Auto,CAMS-2275,High
+TC_2275_014,Manual,TC14_Negative Test - Per Day Limit Non-Mandatory in Multiple Languages,"Verify that Per Day Limit remains non-mandatory across English and French language selections","1. Create Commercial Auto submissions in both English and French
+2. For each language, navigate to form screens with 20 series forms
+3. Leave Per Day Limit blank in both languages
+4. Process through submission steps","1. English forms should allow blank Per Day Limit
+2. French forms should also allow blank Per Day Limit (e.g., FANB 20 G ""Privation De Jouissance"")
+3. No language-specific mandatory validation should apply
+4. Both language versions should treat Per Day Limit as non-mandatory",MM - November 2025 / CAMS-2275 / Language Support,ToDo,Commercial Auto,CAMS-2275,High

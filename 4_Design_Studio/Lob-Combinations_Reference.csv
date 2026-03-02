@@ -1,0 +1,107 @@
+Transaction,Combination ID,LOB Combination,LOB Count,Description
+New Business,NB-001,Property + Inland Marine,2,Two property lines combined
+New Business,NB-002,Property + General Liability,2,Property with casualty coverage
+New Business,NB-003,Property + Umbrella,2,Property with excess liability
+New Business,NB-004,Property + Financial Lines,2,Property with financial services coverage
+New Business,NB-005,Inland Marine + General Liability,2,Marine cargo with casualty
+New Business,NB-006,Inland Marine + Umbrella,2,Marine cargo with umbrella coverage
+New Business,NB-007,Inland Marine + Financial Lines,2,Marine with financial lines
+New Business,NB-008,General Liability + Umbrella,2,Casualty with excess liability
+New Business,NB-009,General Liability + Financial Lines,2,Casualty with financial coverage
+New Business,NB-010,Umbrella + Financial Lines,2,Excess liability with financial lines
+New Business,NB-011,Property + Inland Marine + General Liability,3,Property with marine and casualty
+New Business,NB-012,Property + Inland Marine + Umbrella,3,Property with marine and excess liability
+New Business,NB-013,Property + Inland Marine + Financial Lines,3,Property with marine and financial
+New Business,NB-014,Property + General Liability + Umbrella,3,Property with casualty and excess liability
+New Business,NB-015,Property + General Liability + Financial Lines,3,Property with casualty and financial
+New Business,NB-016,Property + Umbrella + Financial Lines,3,Property with umbrella and financial
+New Business,NB-017,Inland Marine + General Liability + Umbrella,3,Marine with casualty and excess liability
+New Business,NB-018,Inland Marine + General Liability + Financial Lines,3,Marine with casualty and financial
+New Business,NB-019,Inland Marine + Umbrella + Financial Lines,3,Marine with excess liability and financial
+New Business,NB-020,General Liability + Umbrella + Financial Lines,3,Casualty with excess liability and financial
+New Business,NB-021,Property + Inland Marine + General Liability + Umbrella,4,Property marine and casualty with excess liability
+New Business,NB-022,Property + Inland Marine + General Liability + Financial Lines,4,Property marine casualty with financial
+New Business,NB-023,Property + Inland Marine + Umbrella + Financial Lines,4,Property marine with excess liability and financial
+New Business,NB-024,Property + General Liability + Umbrella + Financial Lines,4,Property casualty with excess liability and financial
+New Business,NB-025,Inland Marine + General Liability + Umbrella + Financial Lines,4,Marine casualty with excess liability and financial
+New Business,NB-026,Property + Inland Marine + General Liability + Umbrella + Financial Lines,5,All five LOBs
+Renewal,R-001,Property + Inland Marine,2,Renewal of property and marine
+Renewal,R-002,Property + General Liability,2,Renewal of property and casualty
+Renewal,R-003,Property + Umbrella,2,Renewal of property and excess liability
+Renewal,R-004,Property + Financial Lines,2,Renewal of property and financial
+Renewal,R-005,Inland Marine + General Liability,2,Renewal of marine and casualty
+Renewal,R-006,Inland Marine + Umbrella,2,Renewal of marine and excess liability
+Renewal,R-007,Inland Marine + Financial Lines,2,Renewal of marine and financial
+Renewal,R-008,General Liability + Umbrella,2,Renewal of casualty and excess liability
+Renewal,R-009,General Liability + Financial Lines,2,Renewal of casualty and financial
+Renewal,R-010,Umbrella + Financial Lines,2,Renewal of excess liability and financial
+Renewal,R-011,Property + Inland Marine + General Liability,3,Renewal of property marine and casualty
+Renewal,R-012,Property + Inland Marine + Umbrella,3,Renewal of property marine and excess liability
+Renewal,R-013,Property + Inland Marine + Financial Lines,3,Renewal of property marine and financial
+Renewal,R-014,Property + General Liability + Umbrella,3,Renewal of property casualty and excess liability
+Renewal,R-015,Property + General Liability + Financial Lines,3,Renewal of property casualty and financial
+Renewal,R-016,Property + Umbrella + Financial Lines,3,Renewal of property excess liability and financial
+Renewal,R-017,Inland Marine + General Liability + Umbrella,3,Renewal of marine casualty and excess liability
+Renewal,R-018,Inland Marine + General Liability + Financial Lines,3,Renewal of marine casualty and financial
+Renewal,R-019,Inland Marine + Umbrella + Financial Lines,3,Renewal of marine excess liability and financial
+Renewal,R-020,General Liability + Umbrella + Financial Lines,3,Renewal of casualty excess liability and financial
+Renewal,R-021,Property + Inland Marine + General Liability + Umbrella,4,Renewal of property marine casualty and excess liability
+Renewal,R-022,Property + Inland Marine + General Liability + Financial Lines,4,Renewal of property marine casualty and financial
+Renewal,R-023,Property + Inland Marine + Umbrella + Financial Lines,4,Renewal of property marine excess liability and financial
+Renewal,R-024,Property + General Liability + Umbrella + Financial Lines,4,Renewal of property casualty excess liability and financial
+Renewal,R-025,Inland Marine + General Liability + Umbrella + Financial Lines,4,Renewal of marine casualty excess liability and financial
+Renewal,R-026,Property + Inland Marine + General Liability + Umbrella + Financial Lines,5,Renewal of all five LOBs
+Policy Change,PC-001,Property + Inland Marine,2,Policy change for property and marine
+Policy Change,PC-002,Property + General Liability,2,Policy change for property and casualty
+Policy Change,PC-003,Property + Umbrella,2,Policy change for property and excess liability
+Policy Change,PC-004,Property + Financial Lines,2,Policy change for property and financial
+Policy Change,PC-005,Inland Marine + General Liability,2,Policy change for marine and casualty
+Policy Change,PC-006,Inland Marine + Umbrella,2,Policy change for marine and excess liability
+Policy Change,PC-007,Inland Marine + Financial Lines,2,Policy change for marine and financial
+Policy Change,PC-008,General Liability + Umbrella,2,Policy change for casualty and excess liability
+Policy Change,PC-009,General Liability + Financial Lines,2,Policy change for casualty and financial
+Policy Change,PC-010,Umbrella + Financial Lines,2,Policy change for excess liability and financial
+Policy Change,PC-011,Property + Inland Marine + General Liability,3,Policy change for property marine and casualty
+Policy Change,PC-012,Property + Inland Marine + Umbrella,3,Policy change for property marine and excess liability
+Policy Change,PC-013,Property + Inland Marine + Financial Lines,3,Policy change for property marine and financial
+Policy Change,PC-014,Property + General Liability + Umbrella,3,Policy change for property casualty and excess liability
+Policy Change,PC-015,Property + General Liability + Financial Lines,3,Policy change for property casualty and financial
+Policy Change,PC-016,Property + Umbrella + Financial Lines,3,Policy change for property excess liability and financial
+Policy Change,PC-017,Inland Marine + General Liability + Umbrella,3,Policy change for marine casualty and excess liability
+Policy Change,PC-018,Inland Marine + General Liability + Financial Lines,3,Policy change for marine casualty and financial
+Policy Change,PC-019,Inland Marine + Umbrella + Financial Lines,3,Policy change for marine excess liability and financial
+Policy Change,PC-020,General Liability + Umbrella + Financial Lines,3,Policy change for casualty excess liability and financial
+Policy Change,PC-021,Property + Inland Marine + General Liability + Umbrella,4,Policy change for property marine casualty and excess liability
+Policy Change,PC-022,Property + Inland Marine + General Liability + Financial Lines,4,Policy change for property marine casualty and financial
+Policy Change,PC-023,Property + Inland Marine + Umbrella + Financial Lines,4,Policy change for property marine excess liability and financial
+Policy Change,PC-024,Property + General Liability + Umbrella + Financial Lines,4,Policy change for property casualty excess liability and financial
+Policy Change,PC-025,Inland Marine + General Liability + Umbrella + Financial Lines,4,Policy change for marine casualty excess liability and financial
+Policy Change,PC-026,Property + Inland Marine + General Liability + Umbrella + Financial Lines,5,Policy change for all five LOBs
+Policy Change Modification,PCM-001,Remove Property + Add Umbrella,2,Remove Property from existing and add Umbrella
+Policy Change Modification,PCM-002,Remove Inland Marine + Add General Liability,2,Remove Inland Marine from existing and add General Liability
+Policy Change Modification,PCM-003,Remove General Liability + Add Financial Lines,2,Remove General Liability from existing and add Financial Lines
+Policy Change Modification,PCM-004,Remove Umbrella + Add Property,2,Remove Umbrella from existing and add Property
+Policy Change Modification,PCM-005,Remove Financial Lines + Add Inland Marine,2,Remove Financial Lines from existing and add Inland Marine
+Policy Change Modification,PCM-006,Add Umbrella to Property + Inland Marine,3,Add Umbrella to existing Property and Inland Marine combination
+Policy Change Modification,PCM-007,Add General Liability to Property + Umbrella,3,Add General Liability to existing Property and Umbrella combination
+Policy Change Modification,PCM-008,Remove Property from Property + Inland Marine + GL,2,Remove one LOB from three LOB combination
+Policy Change Modification,PCM-009,Add Financial Lines to Property + Inland Marine,3,Add Financial Lines to two LOB combination
+Policy Change Modification,PCM-010,Remove Inland Marine + Add General Liability to Property + Inland Marine + Umbrella,3,Replace one LOB in three LOB combination
+Rewrite,RW-001,Inland Marine + General Liability,2,Rewrite with marine and casualty
+Rewrite,RW-002,Property + Umbrella,2,Rewrite with property and excess liability
+Rewrite,RW-003,General Liability + Financial Lines,2,Rewrite with casualty and financial
+Rewrite,RW-004,Property + Inland Marine,2,Rewrite with property and marine
+Rewrite,RW-005,Umbrella + Inland Marine,2,Rewrite with excess liability and marine
+Rewrite,RW-006,Property + General Liability + Umbrella,3,Rewrite with property casualty and excess liability
+Rewrite,RW-007,Inland Marine + General Liability + Umbrella,3,Rewrite with marine casualty and excess liability
+Rewrite,RW-008,Property + Inland Marine + Financial Lines,3,Rewrite with property marine and financial
+Rewrite,RW-009,Property + General Liability + Financial Lines,3,Rewrite with property casualty and financial
+Rewrite,RW-010,General Liability + Umbrella + Financial Lines,3,Rewrite with casualty excess liability and financial
+Rewrite,RW-011,Property + Inland Marine + General Liability,3,Rewrite with property marine and casualty
+Rewrite,RW-012,Inland Marine + Umbrella + Financial Lines,3,Rewrite with marine excess liability and financial
+Rewrite,RW-013,Property + Inland Marine + Umbrella + Financial Lines,4,Rewrite with property marine excess liability and financial
+Rewrite,RW-014,Property + General Liability + Umbrella + Financial Lines,4,Rewrite with property casualty excess liability and financial
+Rewrite,RW-015,Inland Marine + General Liability + Umbrella + Financial Lines,4,Rewrite with marine casualty excess liability and financial
+Rewrite,RW-016,Property + Inland Marine + General Liability + Umbrella,4,Rewrite with property marine casualty and excess liability
+Rewrite,RW-017,Property + Inland Marine + General Liability + Financial Lines,4,Rewrite with property marine casualty and financial
+Rewrite,RW-018,Property + Inland Marine + General Liability + Umbrella + Financial Lines,5,Rewrite with all five LOBs

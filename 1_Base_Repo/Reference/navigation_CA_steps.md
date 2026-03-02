@@ -37,55 +37,64 @@ Click on Transaction and verify the details mapped correctly from UWD to PC in p
  
 ## Lines of Business (LOB) Configuration
  
-### 4. Property Screen
-- Navigate to Property screen
+### 4. Fleet
+- Navigate to Vehicles screen add vehicles or import the vehciles from spread sheet.
 - Fill all mandatory fields
-- **Validate integrations in location screen:**
-  - Geocode
-  - OPTA
-  - Risk Predictive Analysis
-  - CCL
-  - Marginal Impact
+- Navigate to Fleet summary screen and select the fleet type as Scheduled or Bulk from the drop-down menu.
+- Fill all the mandatory fields in Fleet summary screen 
+- Navigate Risk Assessment and fill all the mandatory fields
+-Navigate to Risk analysis screen and approve the UW rules
+
+### 5. IRCA LOB
+- Select the base Jurisdiction either QC or ON or AB
+- Navigate to Vehicles screen add the vehicles
+- Fill all mandatory fields and click on Ok button
+- Navigate to Driver screen add the driver details and assign the vehicle 
+- Navigate to Risk analysis screen and approve the UW rules
+
  
-### 5. Inland Marine LOB
-- Navigate to Inland Marine LOB
-- Fill all mandatory fields
- 
+
 ### 6. General Liability LOB
 - Navigate to General Liability LOB
-- Fill all mandatory fields 
- 
-### 7. Umbrella LOB
-- Navigate to Umbrella LOB
 - Fill all mandatory fields
  
-### 8. Financial Lines
-- Navigate to Financial Lines
-- Add the products
+### 7. Motor Truck LOB
+- Navigate to Motor Truck LOB
 - Fill all mandatory fields
+ 
+### 8. Excess Auto LOB
+- Navigate to Excess Auto
+- - Fill all mandatory fields
+### 9. Contingent Lessor LOB
+- Navigate to Contingent Lessor
+- - Fill all mandatory fields
+### 10. Non-Owned Auto LOB
+- Navigate to Non-Owned Auto
+- - Fill all mandatory fields
+### 11. Garage LOB
+- Navigate to Garage
+- Fill all mandatory fields
+- Navigate  to Garage Type and Select the Garage Type as scheduled or Bulk
+
+
  
 ---
  
 ## Pricing & Approval
  
-### 9. Price the Submission
+### 12. Price the Submission
 - After entering all mandatory fields, click Price
 - Approve Underwriter rules
  
-### 10. Update Quoted Premium
-- Navigate to update screen
-- Update the Quoted Premium
+### 13. IPS contract ID & program ID
 - Add IPS contract ID & program ID
  
-### 11. Audit Screen
-- Navigate to Audit screen
-- Select Yes/No for GL and IM
  
 ---
  
 ## Quote Process
  
-### 12. Generate Quote
+### 14. Generate Quote
 - Click on Quote
 - Validate the Quote Document
  
@@ -93,11 +102,8 @@ Click on Transaction and verify the details mapped correctly from UWD to PC in p
  
 ## Binding Process
  
-### 13. Update Actual Premium
-- Navigate back to update screen
-- Update the Actual Premium
  
-### 14. Bind the Policy
+### 15. Bind the Policy
 - Click on Bind
 - Validate the Binder Document
  
@@ -105,17 +111,15 @@ Click on Transaction and verify the details mapped correctly from UWD to PC in p
  
 ## Policy Issuance
  
-### 15. Issue Policy
+### 16. Issue Policy
 - Click on policy and navigate to policy summary screen
 - Click on Issue policy
  
-### 16. Price Issuance Submission
+### 17. Price Issuance Submission
 - Click on Price button of issuance submission
  
-### 17. Issue the Policy
+### 18. Issue the Policy
 - Click on Issue the policy of issuance submission
-- Validate Froms in the Forms screen
-- Validate Dec Document
  
 ---
  
@@ -124,13 +128,15 @@ Click on Transaction and verify the details mapped correctly from UWD to PC in p
 ### **Scope To Be Covered:**
 - Domestic
 - Produced
+- Received 
  
 ### **Transactions To Be Covered:**
 - New Business
 - Policy Change
 - Policy Change OOS
-- Cancel
 - Reinstate
 - Rewrite
 - Rewrite OOS
 - Renewal
+
+

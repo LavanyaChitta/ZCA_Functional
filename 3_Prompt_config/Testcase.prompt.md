@@ -8,17 +8,16 @@ description: Generate detailed manual test cases in CSV format for the given use
 ## Input Requirements
  
 **User Story File Path:** Prompt user to provide the file path at runtime
-- Example: `C:\Users\LAVANYA.CHITTAJALLU\copilot\OptimusCore\1_Base_Repo\User_Story\{filename}.md`
+- Example: `C:\Users\LAVANYA.CHITTAJALLU\git_Copilot_Project\OptimusCore\1_Base_Repo\User_Story\CAMS-3321.md`
 
-- The prompt will ask: "Please provide the User Story file path:"
- 
-**Template Reference:** `C:\Users\LAVANYA.CHITTAJALLU\copilot\OptimusCore\1_Base_Repo\Template\Template.md`
+**Navigation Steps Reference:** Prompt user to provide the file path at runtime
+- Example: `C:\Users\LAVANYA.CHITTAJALLU\git_Copilot_Project\OptimusCore\1_Base_Repo\Reference\navigation_steps.md`
 
-**Navigation Steps Reference:** `C:\Users\LAVANYA.CHITTAJALLU\copilot\OptimusCore\1_Base_Repo\Reference\navigation_steps.md`
+**Template Reference:** `C:\Users\LAVANYA.CHITTAJALLU\git_Copilot_Project\OptimusCore\1_Base_Repo\Template\Template.md` (Auto-loaded)
 
-**Output Location:** `C:\Users\LAVANYA.CHITTAJALLU\copilot\OptimusCore\4_Design_Studio\{filename}_TestCases.csv`
+**Scenario Coverage Reference:** `C:\Users\LAVANYA.CHITTAJALLU\git_Copilot_Project\OptimusCore\1_Base_Repo\Reference\Scenarios.md` (Auto-loaded)
 
-- The prompt will ask: "Please provide the Output Location file path:"
+**Output Location:** Auto-generated as `C:\Users\LAVANYA.CHITTAJALLU\git_Copilot_Project\OptimusCore\4_Design_Studio\{filename}_TestCases.csv` based on input user story filename
 
 
 ---
@@ -32,22 +31,39 @@ Generate manual test cases in CSV format based on the user story provided in the
 ## Instructions
  
 ### 1. Read Input Files
-- Prompt the user to enter the User Story file path
 - Read the user story and acceptance criteria from the provided file path
 - Read the template structure from `Template.md`
-- Read any reference documents for application flow (if available)
+- Read any reference documents for application flow and navigation steps from `navigation_steps.md`
  
-### 2. Analyze User Story
-- Identify all distinct scenarios within the user story **ONLY**
-- Do not create additional scenarios beyond what is explicitly defined in the user story acceptance criteria
+### 2. Analyze User Story & Map Against Scenarios.md
+- Read and analyze the user story and acceptance criteria
+- Cross-reference with all scenarios defined in `Scenarios.md`:
+  - New Business
+  - Policy Change (Inception, Midterm, Out of Sequence)
+  - Cancel and Reinstate
+  - Cancel and Rewrite
+  - Renewal
+  - Coverage/form not added in NB but adding in PC/Rewrite/Renewal
+  - Backdated NB and Renewal
+  - UI level validation
+  - Document validation
+  - Produced scope
+- Identify all distinct scenarios within the user story
 - Extract scenario-specific details:
   - Scenario title/name
   - Acceptance criteria
   - Preconditions (explicit or contextual)
   - Expected outcomes
   - UI elements mentioned
- 
-### 3. Generate Test Cases
+
+### 3. Auto-Generate Test Cases
+- Generate test cases automatically without user confirmation
+- Proceed directly to CSV generation
+- Save directly to auto-generated output location
+
+---
+
+### 4. Generate Test Cases
  
 For each scenario **explicitly mentioned in the user story**, generate **exactly one** test case with multiple rows (one row per action-expected result pair):
  
@@ -61,15 +77,15 @@ For each scenario **explicitly mentioned in the user story**, generate **exactly
 - Action: First action step (numbered as "1. ")
 - Expected Result: First expected result (numbered as "1. ")
 - Test Repository Path: Full path to test repository
-- Status: Done / In Progress / Not Started
-- Components: Middle Market
+- Status: ToDo
+- Components: Middle Market / Component from user story
 - User Story: User Story ID
 - Priority: High / Medium / Low
 - Scenario Type: Positive / Negative
  
 **Subsequent Rows (Same Test Case - Additional Steps):**
 - TC ID: Same as first row
-- Test Type: Leave empty or repeat
+- Test Type: Leave empty
 - Test Case Name: Leave empty
 - Description: Leave empty
 - Action: Next action step (numbered as "2. ", "3. ", etc.)
@@ -91,8 +107,8 @@ For each scenario **explicitly mentioned in the user story**, generate **exactly
 - **Action:** {Single action step - one per row}
 - **Expected Result:** {Expected result for the corresponding action - one per row}
 - **Test Repository Path:** {Path to test repository}
-- **Status:** Done / In Progress / Not Started
-- **Components:** Middle Market
+- **Status:** ToDo
+- **Components:** Middle Market/Commerical Auto (it should refer to the components mentioned in the user story)
 - **User Story:** {User Story ID}
 - **Priority:** High / Medium / Low
 - **Scenario Type:** Positive / Negative
@@ -136,7 +152,7 @@ TC ID,Test Type,Test Case Name,Description,Action,Expected Result,Test Repositor
    - Action: First Action step (numbered as "1. ")
    - Expected Result: First Expected Result (numbered as "1. ")
    - Test Repository Path
-   - Status
+   - Status (ToDo)
    - Components (Middle Market)
    - User Story ID
    - Priority
@@ -149,7 +165,7 @@ TC ID,Test Type,Test Case Name,Description,Action,Expected Result,Test Repositor
    - Action: Next Action step (numbered as "2. ", "3. ", etc.) - IN THE ACTION COLUMN ONLY
    - Expected Result: Next Expected Result (numbered as "2. ", "3. ", etc.) - IN THE EXPECTED RESULT COLUMN ONLY
    - Test Repository Path: Empty
-   - Status: Empty
+   - Status: ToDo
    - Components: Empty
    - User Story ID: Empty
    - Priority: Empty
@@ -162,23 +178,56 @@ TC ID,Test Type,Test Case Name,Description,Action,Expected Result,Test Repositor
 
 #### Scenario Coverage Rules
  
+**Comprehensive Scenario Mapping:**
+- Map user story requirements to all applicable scenarios from Scenarios.md
+- Generate test cases for:
+  - All transaction types mentioned in user story
+  - All scopes (Domestic, Produced) where applicable
+  - All products mentioned (if multiple products in scope)
+  - Coverage/form additions at different lifecycle stages
+  - Backdated scenarios where applicable
+  
+**Positive Test Cases:**
+- Complete end-to-end workflows covering all transaction types
+- UI level validations (field display, labels, dropdowns, buttons)
+- Document validations (Quote, Binder, Issued Policy)
+- Payload/Backend verifications
+- Form attachment and versioning logic
+- Pricing, Quote, Bind, and Policy Issuance workflows
+
+**Negative Test Cases (MUST Include):**
+- Old/deprecated version rejection
+- Missing required fields/forms
+- Incorrect version in payload
+- Form attachment without selection (if applicable)
+- Edition date mismatches (if applicable)
+- Form removal/replacement scenarios
+- Workflow validation failures (pricing without form, binding without attachment, etc.)
+- UI validation errors
+- Multiple version handling
+- Invalid form selection
+
 **Focus on Explicit Requirements:**
-- Focus only on the specific functionality described in each scenario
-- Do not add edge cases, boundary testing, or negative scenarios unless explicitly mentioned in the user story
-- Generate **exactly one test case per scenario** as defined in the user story
-- Include scope considerations (e.g., Domestic, Produced) 
-- Ensure all transaction types mentioned in the user story are covered:
+- Cover all acceptance criteria from the user story
+- Include scope considerations (e.g., Domestic, Produced)
+- Include Price & Approval, Quote Process, Binding Process, Policy Issuance steps for every test case
+- Ensure all transaction types are covered:
   - New Business
-  - Policy Change (Inception, Midterm, Out of Sequence, Preemption)
-  - Cancel (Flat, Pro rata & Short rate)
+  - Policy Change (Inception, Midterm, Out of Sequence)
+  - Renewal
   - Reinstatement
   - Rewrite Full Term
-- Genearte atleast 20 to 30 test cases covering all scenarios and transaction types mentioned in the user story
-- The number of test cases must match exactly the number of scenarios defined in the user story
+- Generate maximum number of test cases covering all scenarios
+- Cover all scenarios defined in Scenarios.md that apply to this user story
+
+**Minimum Coverage Requirements:**
+- Minimum 20-25 positive test cases
+- Minimum 5-15 negative test cases
+- Total minimum: 30-40 test cases
  
 **No Duplicate Test Cases:**
 - Do not create duplicate test cases for the same scenario
-- Do not create additional scenarios beyond what is defined in the user story
+- Do not create additional scenarios beyond what is defined in the user story and Scenarios.md
 - Do not include steps/validations not explicitly mentioned in the user story or acceptance criteria
 
  
@@ -238,10 +287,19 @@ TC ID,Test Type,Test Case Name,Description,Action,Expected Result,Test Repositor
 ## Execution Command
  
 When ready to generate test cases, the system will:
-1. Prompt user for input file path
+1. **Prompt user ONLY for TWO inputs:**
+   - User Story file path
+   - Navigation Steps Reference file path
 2. Read and analyze the user story
-3. Generate test cases following the template
-4. Save as CSV in the specified location
-5. Display confirmation with file path and test case count
+3. Auto-load Template.md and Scenarios.md
+4. Map scenarios against Scenarios.md
+5. Generate test cases following the template
+6. Auto-generate output path as: `{4_Design_Studio folder}/{UserStory_filename}_TestCases.csv`
+7. Save CSV file to output location
+8. Display completion confirmation with:
+   - File path
+   - Total test case count
+   - Breakdown: Positive (count) + Negative (count)
+   - Test case summary table
  
 ---

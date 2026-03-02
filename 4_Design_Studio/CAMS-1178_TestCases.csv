@@ -1,0 +1,304 @@
+TC ID,Test Type,Test Case Name,Description,Actions,Expected Results,Test Repository Path,Status,Component,User Story,Priority,Acceptance Criteria
+TC_1178_001,Manual,TC01_GL/Umbrella Update Screen Display - PRODUCED Scope - New Business,Validate new update screen displays for GL/Umbrella PRODUCED scope submissions on new business,"1. Initiate a New Business submission for GL/Umbrella
+2. Set Scope = PRODUCED
+3. Navigate to Line Selection screen
+4. Add GL and Umbrella LOBs
+5. Fill all mandatory fields in Property and GL/Umbrella screens
+6. Click Price button
+7. Approve Underwriter rules
+8. Navigate to Update screen
+9. Verify Master Policy table appears with country list","1. New update screen should be displayed for GL/Umbrella PRODUCED submission
+2. Screen should show countries: Canada, Any countries = local policy, Any countries = Freedom of Service - Local Policy, Any Countries = Freedom of Service - Ground up
+3. Canada should show Insurance Solution = Master Policy
+4. System should display the Master Policy table with solution/coverage summary
+5. Only specified countries should be displayed in the summary
+6. No other countries should appear
+7. Quoted Premium column should be visible and editable","MM - November 2025 / CAMS-1178 GL/Umbrella International Premium Allocation - table enhancements",ToDo,Middle Market,CAMS-1178,High,Acceptance Criteria 1
+TC_1178_002,Manual,TC02_GL/Umbrella Update Screen - Existing Policy Not Visible,Validate update screen is NOT displayed for existing policies,"1. Retrieve an existing GL/Umbrella policy
+2. Navigate to Policy summary screen
+3. Navigate to Update screen
+4. Attempt to access the new update screen table","1. Old update screen should be displayed
+2. New update screen should NOT be visible
+3. User should see the original premium entry interface","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,High,Negative
+TC_1178_003,Manual,TC03_GL/Umbrella Update Screen - Policy Change Renewal,Validate update screen is NOT visible for Policy Change until renewal,"1. Retrieve an existing GL/Umbrella policy (NB)
+2. Initiate Policy Change transaction
+3. Navigate to Update screen
+4. Perform Renewal transaction
+5. Navigate to Update screen on renewed policy","1. Policy Change should show old update screen
+2. New update screen should NOT appear for PC
+3. Upon Renewal, new update screen should be displayed
+4. User should see updated Master Policy table on renewal","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,Medium,Negative
+TC_1178_004,Manual,TC04_DIC/DIL Coverage Creation - Local Policy Insurance Solution,Validate new DIC/DIL coverage is created when Local Policy insurance solution is selected,"1. Initiate New Business GL/Umbrella PRODUCED submission
+2. Add receiving territory with Insurance Solution = Local Policy
+3. On Update screen, locate Master Policy table
+4. Click on Local Policy row
+5. Navigate to Coverage section","1. New DIC/DIL coverage (DIC/DIL - Country Code) should be available
+2. Coverage should be created for GL LOB
+3. Coverage should be created for Umbrella LOB
+4. DIC/DIL prefix should be followed by country code (e.g., DIC/DIL - CA)
+5. Coverage should link to specified country in receiving territory","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,High,Positive
+TC_1178_005,Manual,TC05_Master Policy Table Coverage Mapping - Canada Master,Validate Master Policy table correctly displays Canada as Master Policy,"1. Initiate New Business GL/Umbrella PRODUCED submission
+2. Add Canada as receiving territory
+3. Navigate to Update screen
+4. Locate Master Policy table
+5. Review Canada row","1. Canada row should show Insurance Solution = Master Policy
+2. Master Coverage should display Master Policy
+3. Coverage Type should be Blank for Canada
+4. Quoted Premium should be displayed for Canada entry
+5. Actual Premium (if available) should be displayed","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,High,Positive
+TC_1178_006,Manual,TC06_Master Policy Table Coverage Mapping - Exempt Solution,Validate Master Policy table correctly displays Exempt insurance solution as Master Policy,"1. Initiate New Business GL/Umbrella PRODUCED submission
+2. Add receiving territory with Insurance Solution = Exempt
+3. Navigate to Update screen
+4. Locate Master Policy table
+5. Review Exempt row","1. Exempt row should show Master Coverage = Master Policy
+2. Coverage Type should be Blank for Exempt
+3. Quoted Premium should be displayed
+4. Actual Premium should be displayed
+5. Row should be included in Master Policy summary","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,High,Positive
+TC_1178_007,Manual,TC07_Master Policy Table Coverage Mapping - Non-Admitted,Validate Master Policy table correctly displays Non-Admitted solution as Ground up,"1. Initiate New Business GL/Umbrella PRODUCED submission
+2. Add receiving territory with Insurance Solution = Non-Admitted
+3. Navigate to Update screen
+4. Locate Master Policy table
+5. Review Non-Admitted row","1. Non-Admitted row should show Master Coverage = Ground up
+2. Coverage Type should display Non Admitted
+3. Quoted and Actual premiums should be blank and editable
+4. User should be able to enter premiums manually
+5. Premiums entered should be allocated to master policy","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,High,Positive
+TC_1178_008,Manual,TC08_Master Policy Table Coverage Mapping - Local Policy,Validate Master Policy table correctly displays Local Policy solution with DIC/DIL,"1. Initiate New Business GL/Umbrella PRODUCED submission
+2. Add receiving territory with Insurance Solution = Local Policy
+3. Navigate to Update screen
+4. Locate Master Policy table
+5. Review Local Policy row","1. Local Policy row should show Master Coverage = DIC/DIL
+2. Coverage Type should display corresponding DIC/DIL Type (Non Admitted or Financial Interest)
+3. Quoted Premium should display premium from newly created DIC/DIL coverage
+4. Actual Premium should display actual premium from DIC/DIL coverage
+5. Premiums should be auto-populated from DIC/DIL coverages","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,High,Positive
+TC_1178_009,Manual,TC09_Master Policy Table Coverage Mapping - Financial Interest,Validate Master Policy table correctly displays Financial Interest solution as Ground up,"1. Initiate New Business GL/Umbrella PRODUCED submission
+2. Add receiving territory with Insurance Solution = FinC (Financial Interest)
+3. Navigate to Update screen
+4. Locate Master Policy table
+5. Review FinC row","1. FinC row should show Master Coverage = Ground up
+2. Coverage Type should display Financial Interest
+3. Quoted and Actual premiums should be blank and editable
+4. User should be able to manually enter premiums
+5. Premiums should reflect in Master Policy calculation","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,High,Positive
+TC_1178_010,Manual,TC10_Umbrella Simplified Approach - 100% DIC/DIL Allocation,Validate Umbrella premiums are allocated 100% as DIC/DIL to master policy,"1. Initiate New Business GL/Umbrella PRODUCED submission
+2. Add receiving territories with Umbrella LOB
+3. Navigate to Update screen
+4. Locate Umbrella coverage section
+5. Enter Umbrella premium
+6. Review Master Policy table","1. Premium entered for Umbrella should be considered 100% DIC/DIL
+2. Premium allocation should show 100% to Master Policy
+3. No split options should be available for Umbrella
+4. Umbrella premium should not appear on local policy premiums
+5. Master Policy calculation should include Umbrella as DIC/DIL","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,High,Positive
+TC_1178_011,Manual,TC11_Premium Retention - Quoted to Actual Conversion,Validate DIC/DIL quoted and actual premiums are retained after conversion,"1. Initiate New Business GL/Umbrella PRODUCED submission
+2. Add receiving territory with Insurance Solution = Local Policy
+3. Navigate to Update screen
+4. Enter Quoted Premium for DIC/DIL
+5. Click Price button
+6. Navigate to Update screen
+7. Update Actual Premium for DIC/DIL
+8. Verify retention","1. Quoted Premium should be retained after actual premium entry
+2. Actual Premium should be editable independently
+3. Both quoted and actual should remain visible in Master Policy table
+4. Premiums should not be deleted or reset
+5. Historical values should be preserved","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,High,Positive
+TC_1178_012,Manual,TC12_Master Policy Premium Calculation - Accuracy,Validate Master Policy premium is correctly calculated as (Total - Local Premiums),"1. Initiate New Business GL/Umbrella PRODUCED submission
+2. Add multiple countries with mixed Insurance Solutions
+3. Enter local policy premiums for each country
+4. Navigate to Master Policy table
+5. Verify calculation","1. Master Policy Premium = Total Program Premium - Sum of Local Policy Premiums
+2. Calculation should exclude DIC/DIL amounts (100% to Master)
+3. Currency conversion should be applied correctly
+4. Master Premium should reflect in policy documents
+5. Calculation should be validated for GL and Umbrella separately","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,High,Positive
+TC_1178_013,Manual,TC13_Local Currency Conversion for Print,Validate local premiums are converted to local currency for print,"1. Initiate New Business GL/Umbrella PRODUCED submission
+2. Add receiving territory with non-USD currency
+3. Enter premiums in system currency
+4. Navigate to IPA screen
+5. Print/export report","1. Local premiums should display in correct local currency
+2. Conversion rates should be applied accurately
+3. Printed documents should show local currency values
+4. Master Policy should show policy currency (USD)
+5. Conversion should be performed consistently","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,Medium,Positive
+TC_1178_014,Manual,TC14_BORIS Data Integrity - No Impact,Validate BORIS receives data correctly without impact from new update screen,"1. Initiate New Business GL/Umbrella PRODUCED submission
+2. Set Scope = PRODUCED
+3. Complete entire workflow (Price, Quote, Bind, Issue)
+4. Retrieve issued policy
+5. Verify BORIS data feed","1. BORIS should receive all policy data as usual
+2. New DIC/DIL coverages should not corrupt BORIS feed
+3. Premium allocation should be accurate in BORIS
+4. All fields should match expected values
+5. No data loss or modification in BORIS","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,High,Positive
+TC_1178_015,Manual,TC15_CESAR Integration - DIC/DIL ML-SL-CC Mapping,Validate DIC/DIL coverages flow to CESAR with correct ML-SL-CC codes,"1. Initiate New Business GL/Umbrella PRODUCED submission
+2. Add receiving territory with Insurance Solution = Local Policy
+3. Complete workflow through Issue
+4. Retrieve issued policy
+5. Verify CESAR feed
+6. Validate ML-SL-CC codes","1. DIC/DIL coverage should flow to CESAR successfully
+2. ML-SL-CC codes should be correctly mapped per SL-ML-CC Coverage Mapping
+3. Separate GL and Umbrella ML-SL-CC codes should be applied
+4. Coverage hierarchy should be maintained
+5. CESAR should recognize DIC/DIL as valid coverage","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,High,Positive
+TC_1178_016,Manual,TC16_Claim Center Exclusion - No DIC/DIL Visibility,Validate DIC/DIL coverages are NOT visible in Claim Center,"1. Initiate and Issue New Business GL/Umbrella PRODUCED submission
+2. Add Local Policy with DIC/DIL coverages
+3. Open policy in Claim Center
+4. Attempt to add claim against DIC/DIL coverage
+5. Search for DIC/DIL in coverage list","1. DIC/DIL coverage should not appear in Claim Center available coverages
+2. User should not be able to select DIC/DIL for claims
+3. Only applicable coverages should be available for claims
+4. Error handling should prevent DIC/DIL selection if attempted
+5. Claim workflow should not be affected","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,High,Positive
+TC_1178_017,Manual,TC17_Update Screen Visibility - Cancellation Impact,Validate update screen behavior is consistent on Cancellation transaction,"1. Initiate New Business GL/Umbrella PRODUCED submission
+2. Complete through Issue
+3. Initiate Cancellation transaction
+4. Navigate to Update screen
+5. Verify update screen type","1. Cancellation should show new update screen (inherited from NB)
+2. Behavior should be consistent with NB transaction type
+3. Update screen should reflect cancellation context
+4. Premiums should not be reset
+5. Master Policy table should remain visible","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,Medium,Positive
+TC_1178_018,Manual,TC18_Update Screen Visibility - Rewrite Impact,Validate update screen behavior is consistent on Rewrite transaction,"1. Initiate New Business GL/Umbrella PRODUCED submission
+2. Complete through Issue
+3. Initiate Rewrite transaction
+4. Navigate to Update screen
+5. Verify update screen type
+6. Add new receiving territories","1. Rewrite should show new update screen (inherited from NB)
+2. New receiving territories should display in Master Policy table
+3. Existing premium data should be carried forward
+4. User should be able to modify premiums
+5. Update screen should function as in NB context","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,Medium,Positive
+TC_1178_019,Manual,TC19_Update Screen Visibility - Reinstatement Impact,Validate update screen behavior on Reinstatement transaction,"1. Initiate New Business GL/Umbrella PRODUCED submission
+2. Complete through Issue
+3. Initiate Cancellation
+4. Initiate Reinstatement transaction
+5. Navigate to Update screen","1. Reinstatement should show appropriate update screen
+2. Behavior should be consistent with transaction rules
+3. Master Policy table should display original configuration
+4. Premiums should be retained from cancelled policy
+5. No data loss should occur","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,Medium,Positive
+TC_1178_020,Manual,TC20_GL LOB DIC/DIL Coverage Creation,Validate DIC/DIL coverage is correctly created for GL LOB,"1. Initiate New Business GL/Umbrella PRODUCED submission
+2. Navigate to GL LOB screen
+3. Add receiving territory with Insurance Solution = Local Policy
+4. Navigate to Coverage section
+5. Verify DIC/DIL for GL","1. DIC/DIL coverage should be created specifically for GL LOB
+2. Coverage name should follow format DIC/DIL - [Country Code]
+3. Coverage should be available in GL coverage list
+4. Premium should be editable on GL coverage
+5. Premium should reflect in Master Policy table for GL column","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,High,Positive
+TC_1178_021,Manual,TC21_Umbrella LOB DIC/DIL Coverage Creation,Validate DIC/DIL coverage is correctly created for Umbrella LOB,"1. Initiate New Business GL/Umbrella PRODUCED submission
+2. Navigate to Umbrella LOB screen
+3. Add receiving territory with Insurance Solution = Local Policy
+4. Navigate to Coverage section
+5. Verify DIC/DIL for Umbrella","1. DIC/DIL coverage should be created specifically for Umbrella LOB
+2. Coverage name should follow format DIC/DIL - [Country Code]
+3. Coverage should be available in Umbrella coverage list
+4. Premium should be editable on Umbrella coverage
+5. Premium should reflect in Master Policy table for Umbrella column","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,High,Positive
+TC_1178_022,Manual,TC22_Update Screen Visibility - Domestic Scope,Validate update screen is NOT visible for Domestic scope submissions,"1. Initiate New Business GL/Umbrella submission
+2. Set Scope = DOMESTIC
+3. Navigate to Line Selection screen
+4. Add GL and Umbrella
+5. Complete workflow through Price
+6. Navigate to Update screen","1. Old update screen should be displayed
+2. New Master Policy table should NOT appear
+3. New update screen should only appear for PRODUCED scope
+4. Domestic scope should function as before
+5. No premiums should be in new format","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,High,Negative
+TC_1178_023,Manual,TC23_Update Screen Visibility - Non-GL/Umbrella Products,Validate update screen is NOT visible for non-GL/Umbrella products,"1. Initiate New Business submission with Property LOB
+2. Set Scope = PRODUCED
+3. Navigate through workflow
+4. Attempt to access Update screen
+5. Verify screen type
+6. Repeat for Inland Marine LOB","1. New update screen should NOT be displayed
+2. Old update screen should appear for Property
+3. Old update screen should appear for Inland Marine
+4. Non-GL/Umbrella products should not show Master Policy table
+5. Workflow should proceed normally without changes","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,High,Negative
+TC_1178_024,Manual,TC24_Coverage Section Hidden - Local Policy Row,Validate coverage section is hidden when Local Policy row is clicked,"1. Initiate New Business GL/Umbrella PRODUCED submission
+2. Add receiving territory with Insurance Solution = Local Policy
+3. Navigate to Update screen
+4. Locate Master Policy table
+5. Click on Local Policy row
+6. Verify coverage section visibility","1. Coverage section should be hidden
+2. User should not see coverage list for Local Policy row
+3. Other rows should still show coverage section as applicable
+4. Coverage data should not be lost
+5. Clicking away should restore coverage section visibility","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,Medium,Positive
+TC_1178_025,Manual,TC25_Coverage Section Hidden - Ground Up Row,Validate coverage section is hidden when Ground Up row is clicked,"1. Initiate New Business GL/Umbrella PRODUCED submission
+2. Add receiving territory with Insurance Solution = Non-Admitted or FinC
+3. Navigate to Update screen
+4. Locate Master Policy table
+5. Click on Ground Up row
+6. Verify coverage section visibility","1. Coverage section should be hidden
+2. User should not see coverage list for Ground Up row
+3. Other rows should still show coverage section
+4. User should focus on premium entry fields
+5. Clicking away should restore coverage section visibility","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,Medium,Positive
+TC_1178_026,Manual,TC26_Invalid Country Entry - Validation,Validate system prevents invalid country entries,"1. Initiate New Business GL/Umbrella PRODUCED submission
+2. Navigate to receiving territory setup
+3. Attempt to add invalid/unknown country code
+4. Try to proceed to Update screen
+5. Verify validation error","1. System should display validation error for invalid country
+2. Error message should guide user to select valid country
+3. Invalid country should not be added to territory list
+4. User should be forced to correct entry
+5. Submission should not proceed with invalid data","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,High,Negative
+TC_1178_027,Manual,TC27_Negative - Missing Mandatory Premium,Validate system requires premium for Master Policy rows,"1. Initiate New Business GL/Umbrella PRODUCED submission
+2. Add receiving territory with Insurance Solution = Non-Admitted
+3. Navigate to Update screen
+4. Locate Master Policy table
+5. Leave premiums blank
+6. Attempt to Price","1. System should display validation error
+2. Error should specify missing premium field
+3. Non-Admitted (Ground up) requires manual premium entry
+4. User should not be able to proceed without premium
+5. Error message should guide to correction","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,High,Negative
+TC_1178_028,Manual,TC28_Negative - Invalid Premium Value,Validate system validates premium entries for correct format,"1. Initiate New Business GL/Umbrella PRODUCED submission
+2. Add receiving territory
+3. Navigate to Update screen
+4. Enter invalid premium (negative, text, special characters)
+5. Attempt to save/Price","1. System should reject invalid premium values
+2. Display validation error with clear message
+3. Negative premiums should be rejected
+4. Text/special characters should be rejected
+5. Only numeric values should be accepted","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,High,Negative
+TC_1178_029,Manual,TC29_Negative - DIC/DIL NOT Created for Ground Up,Validate DIC/DIL coverage is NOT created for Non-Admitted/FinC,"1. Initiate New Business GL/Umbrella PRODUCED submission
+2. Add receiving territory with Insurance Solution = Non-Admitted
+3. Navigate to Coverage section
+4. Search for DIC/DIL coverage
+5. Add receiving territory with Insurance Solution = FinC
+6. Search for DIC/DIL coverage","1. DIC/DIL coverage should NOT be automatically created
+2. Only Local Policy insurance solution should trigger DIC/DIL
+3. Non-Admitted should not have DIC/DIL
+4. FinC should not have DIC/DIL
+5. Manual premium entry fields should appear instead","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,High,Negative
+TC_1178_030,Manual,TC30_Quote Document Validation - Master Policy,Validate Master Policy premiums appear correctly in Quote document,"1. Initiate New Business GL/Umbrella PRODUCED submission
+2. Complete setup with multiple receiving territories
+3. Navigate to Update screen and enter all data
+4. Price the submission
+5. Generate Quote
+6. Validate Quote document","1. Quote should display Master Policy premiums correctly
+2. DIC/DIL amounts should be included from Master Policy table
+3. All receiving territories should be listed
+4. Premium breakdown should be accurate
+5. Document formatting should be correct","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,Medium,Positive
+TC_1178_031,Manual,TC31_Declarations Document Validation - DIC/DIL,Validate DIC/DIL coverage flows correctly to Declarations document,"1. Initiate New Business GL/Umbrella PRODUCED submission
+2. Add Local Policy with DIC/DIL
+3. Complete workflow through Issue
+4. Retrieve issued policy
+5. Validate Declarations document","1. Declarations should show DIC/DIL coverages per country
+2. DIC/DIL premiums should be displayed correctly
+3. Coverage details should be accurate
+4. Currency should be correct for each location
+5. Document should be readable and complete","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,Medium,Positive
+TC_1178_032,Manual,TC32_Binder Document Validation - Master Policy Data,Validate Binder contains correct Master Policy information,"1. Initiate New Business GL/Umbrella PRODUCED submission
+2. Complete workflow through Bind
+3. Generate Binder document
+4. Retrieve Binder
+5. Validate content","1. Binder should show Master Policy premiums
+2. All receiving territories should be listed
+3. Insurance Solutions should be accurately reflected
+4. Premium calculations should be correct
+5. Binder formatting should be professional","MM-November 2025/CAMS-1178 GL/Umbrella International Premium Allocation",ToDo,Middle Market,CAMS-1178,Medium,Positive
