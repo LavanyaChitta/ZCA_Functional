@@ -1,0 +1,1759 @@
+{
+  "summary": {
+    "total_text_blocks": 53,
+    "potential_labels": 19,
+    "identified_fields": 15,
+    "field_categories": 2
+  },
+  "guidewire_fields": [
+    {
+      "detected_text": "Address Book",
+      "field_type": "mailing address",
+      "confidence": 99,
+      "position": {
+        "x": 915,
+        "y": 20
+      },
+      "category": "Insured Information"
+    },
+    {
+      "detected_text": "Policy",
+      "field_type": "policy number",
+      "confidence": 56,
+      "position": {
+        "x": 852,
+        "y": 136
+      },
+      "category": "Policy Information"
+    },
+    {
+      "detected_text": "Step 1: Search or Create Policy",
+      "field_type": "policy number",
+      "confidence": 83,
+      "position": {
+        "x": 481,
+        "y": 142
+      },
+      "category": "Policy Information"
+    },
+    {
+      "detected_text": "Policy",
+      "field_type": "policy number",
+      "confidence": 99,
+      "position": {
+        "x": 597,
+        "y": 227
+      },
+      "category": "Policy Information"
+    },
+    {
+      "detected_text": "Policy",
+      "field_type": "policy number",
+      "confidence": 99,
+      "position": {
+        "x": 879,
+        "y": 227
+      },
+      "category": "Policy Information"
+    },
+    {
+      "detected_text": "Policy",
+      "field_type": "policy number",
+      "confidence": 99,
+      "position": {
+        "x": 96,
+        "y": 250
+      },
+      "category": "Policy Information"
+    },
+    {
+      "detected_text": "Policy",
+      "field_type": "policy number",
+      "confidence": 99,
+      "position": {
+        "x": 533,
+        "y": 391
+      },
+      "category": "Policy Information"
+    },
+    {
+      "detected_text": "Policy",
+      "field_type": "policy number",
+      "confidence": 99,
+      "position": {
+        "x": 533,
+        "y": 453
+      },
+      "category": "Policy Information"
+    },
+    {
+      "detected_text": "Insured Name",
+      "field_type": "named insured",
+      "confidence": 99,
+      "position": {
+        "x": 534,
+        "y": 520
+      },
+      "category": "Insured Information"
+    },
+    {
+      "detected_text": "Policy Systcm",
+      "field_type": "policy number",
+      "confidence": 88,
+      "position": {
+        "x": 534,
+        "y": 579
+      },
+      "category": "Policy Information"
+    },
+    {
+      "detected_text": "Policy System",
+      "field_type": "policy number",
+      "confidence": 88,
+      "position": {
+        "x": 536,
+        "y": 582
+      },
+      "category": "Policy Information"
+    },
+    {
+      "detected_text": "Loss Date",
+      "field_type": "effective date",
+      "confidence": 92,
+      "position": {
+        "x": 536,
+        "y": 642
+      },
+      "category": "Policy Information"
+    },
+    {
+      "detected_text": "Policy #",
+      "field_type": "policy number",
+      "confidence": 79,
+      "position": {
+        "x": 850,
+        "y": 808
+      },
+      "category": "Policy Information"
+    },
+    {
+      "detected_text": "Address",
+      "field_type": "mailing address",
+      "confidence": 99,
+      "position": {
+        "x": 1142,
+        "y": 808
+      },
+      "category": "Insured Information"
+    },
+    {
+      "detected_text": "State",
+      "field_type": "state",
+      "confidence": 99,
+      "position": {
+        "x": 1602,
+        "y": 808
+      },
+      "category": "Insured Information"
+    }
+  ],
+  "field_categories": {
+    "Insured Information": [
+      {
+        "detected_text": "Address Book",
+        "field_type": "mailing address",
+        "confidence": 99,
+        "position": {
+          "x": 915,
+          "y": 20
+        },
+        "category": "Insured Information"
+      },
+      {
+        "detected_text": "Insured Name",
+        "field_type": "named insured",
+        "confidence": 99,
+        "position": {
+          "x": 534,
+          "y": 520
+        },
+        "category": "Insured Information"
+      },
+      {
+        "detected_text": "Address",
+        "field_type": "mailing address",
+        "confidence": 99,
+        "position": {
+          "x": 1142,
+          "y": 808
+        },
+        "category": "Insured Information"
+      },
+      {
+        "detected_text": "State",
+        "field_type": "state",
+        "confidence": 99,
+        "position": {
+          "x": 1602,
+          "y": 808
+        },
+        "category": "Insured Information"
+      }
+    ],
+    "Policy Information": [
+      {
+        "detected_text": "Policy",
+        "field_type": "policy number",
+        "confidence": 56,
+        "position": {
+          "x": 852,
+          "y": 136
+        },
+        "category": "Policy Information"
+      },
+      {
+        "detected_text": "Step 1: Search or Create Policy",
+        "field_type": "policy number",
+        "confidence": 83,
+        "position": {
+          "x": 481,
+          "y": 142
+        },
+        "category": "Policy Information"
+      },
+      {
+        "detected_text": "Policy",
+        "field_type": "policy number",
+        "confidence": 99,
+        "position": {
+          "x": 597,
+          "y": 227
+        },
+        "category": "Policy Information"
+      },
+      {
+        "detected_text": "Policy",
+        "field_type": "policy number",
+        "confidence": 99,
+        "position": {
+          "x": 879,
+          "y": 227
+        },
+        "category": "Policy Information"
+      },
+      {
+        "detected_text": "Policy",
+        "field_type": "policy number",
+        "confidence": 99,
+        "position": {
+          "x": 96,
+          "y": 250
+        },
+        "category": "Policy Information"
+      },
+      {
+        "detected_text": "Policy",
+        "field_type": "policy number",
+        "confidence": 99,
+        "position": {
+          "x": 533,
+          "y": 391
+        },
+        "category": "Policy Information"
+      },
+      {
+        "detected_text": "Policy",
+        "field_type": "policy number",
+        "confidence": 99,
+        "position": {
+          "x": 533,
+          "y": 453
+        },
+        "category": "Policy Information"
+      },
+      {
+        "detected_text": "Policy Systcm",
+        "field_type": "policy number",
+        "confidence": 88,
+        "position": {
+          "x": 534,
+          "y": 579
+        },
+        "category": "Policy Information"
+      },
+      {
+        "detected_text": "Policy System",
+        "field_type": "policy number",
+        "confidence": 88,
+        "position": {
+          "x": 536,
+          "y": 582
+        },
+        "category": "Policy Information"
+      },
+      {
+        "detected_text": "Loss Date",
+        "field_type": "effective date",
+        "confidence": 92,
+        "position": {
+          "x": 536,
+          "y": 642
+        },
+        "category": "Policy Information"
+      },
+      {
+        "detected_text": "Policy #",
+        "field_type": "policy number",
+        "confidence": 79,
+        "position": {
+          "x": 850,
+          "y": 808
+        },
+        "category": "Policy Information"
+      }
+    ]
+  },
+  "all_text": [
+    {
+      "text": "Address Book",
+      "confidence": 99,
+      "x": 915,
+      "y": 20,
+      "w": 137,
+      "h": 30,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "Team",
+      "confidence": 99,
+      "x": 1268,
+      "y": 21,
+      "w": 59,
+      "h": 27,
+      "method": "easyocr_preprocessed"
+    },
+    {
+      "text": "Desktop",
+      "confidence": 99,
+      "x": 486,
+      "y": 22,
+      "w": 86,
+      "h": 28,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "Claim",
+      "confidence": 99,
+      "x": 642,
+      "y": 22,
+      "w": 62,
+      "h": 30,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "Search",
+      "confidence": 99,
+      "x": 774,
+      "y": 22,
+      "w": 70,
+      "h": 28,
+      "method": "easyocr_preprocessed"
+    },
+    {
+      "text": "Dashboard",
+      "confidence": 99,
+      "x": 1122,
+      "y": 22,
+      "w": 108,
+      "h": 24,
+      "method": "easyocr_preprocessed"
+    },
+    {
+      "text": "Go to (Alt+/)",
+      "confidence": 57,
+      "x": 1564,
+      "y": 22,
+      "w": 118,
+      "h": 28,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "G ClaimCenter'",
+      "confidence": 72,
+      "x": 34,
+      "y": 28,
+      "w": 260,
+      "h": 54,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "TM",
+      "confidence": 99,
+      "x": 287,
+      "y": 41,
+      "w": 22,
+      "h": 14,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "St: Draft",
+      "confidence": 97,
+      "x": 752,
+      "y": 88,
+      "w": 88,
+      "h": 26,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "Ins:",
+      "confidence": 99,
+      "x": 622,
+      "y": 90,
+      "w": 40,
+      "h": 24,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "Dol:",
+      "confidence": 99,
+      "x": 684,
+      "y": 90,
+      "w": 48,
+      "h": 24,
+      "method": "easyocr_preprocessed"
+    },
+    {
+      "text": "Pol:",
+      "confidence": 99,
+      "x": 561,
+      "y": 91,
+      "w": 40,
+      "h": 20,
+      "method": "easyocr_preprocessed"
+    },
+    {
+      "text": "ns_",
+      "confidence": 68,
+      "x": 631,
+      "y": 95,
+      "w": 26,
+      "h": 16,
+      "method": "easyocr_preprocessed"
+    },
+    {
+      "text": "Actions",
+      "confidence": 99,
+      "x": 53,
+      "y": 128,
+      "w": 77,
+      "h": 30,
+      "method": "easyocr_preprocessed"
+    },
+    {
+      "text": "Policy",
+      "confidence": 56,
+      "x": 852,
+      "y": 136,
+      "w": 112,
+      "h": 57,
+      "method": "easyocr_preprocessed"
+    },
+    {
+      "text": "Step 1: Search or Create Policy",
+      "confidence": 83,
+      "x": 481,
+      "y": 142,
+      "w": 481,
+      "h": 51,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "S:cp 1: Scarc` cr Crca:c",
+      "confidence": 47,
+      "x": 485,
+      "y": 144,
+      "w": 376,
+      "h": 48,
+      "method": "easyocr_preprocessed"
+    },
+    {
+      "text": "Cance]",
+      "confidence": 89,
+      "x": 1681,
+      "y": 149,
+      "w": 71,
+      "h": 27,
+      "method": "easyocr_preprocessed"
+    },
+    {
+      "text": "Cancel",
+      "confidence": 95,
+      "x": 1682,
+      "y": 150,
+      "w": 70,
+      "h": 28,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "Next >",
+      "confidence": 65,
+      "x": 1812,
+      "y": 150,
+      "w": 62,
+      "h": 24,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "New Claim Wizard",
+      "confidence": 73,
+      "x": 12,
+      "y": 194,
+      "w": 208,
+      "h": 30,
+      "method": "easyocr_preprocessed"
+    },
+    {
+      "text": "Policy",
+      "confidence": 99,
+      "x": 597,
+      "y": 227,
+      "w": 66,
+      "h": 34,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "Policy",
+      "confidence": 99,
+      "x": 879,
+      "y": 227,
+      "w": 66,
+      "h": 34,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "Finc",
+      "confidence": 48,
+      "x": 552,
+      "y": 232,
+      "w": 48,
+      "h": 24,
+      "method": "easyocr_preprocessed"
+    },
+    {
+      "text": "Find",
+      "confidence": 99,
+      "x": 552,
+      "y": 232,
+      "w": 48,
+      "h": 24,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "Crcatc Unvcrified",
+      "confidence": 94,
+      "x": 714,
+      "y": 232,
+      "w": 168,
+      "h": 24,
+      "method": "easyocr_preprocessed"
+    },
+    {
+      "text": "Create Unverified",
+      "confidence": 94,
+      "x": 714,
+      "y": 232,
+      "w": 168,
+      "h": 24,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "Policy",
+      "confidence": 99,
+      "x": 96,
+      "y": 250,
+      "w": 67,
+      "h": 35,
+      "method": "easyocr_preprocessed"
+    },
+    {
+      "text": "Find",
+      "confidence": 99,
+      "x": 52,
+      "y": 254,
+      "w": 48,
+      "h": 26,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "Parties Involved",
+      "confidence": 99,
+      "x": 26,
+      "y": 316,
+      "w": 154,
+      "h": 24,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "Documents",
+      "confidence": 99,
+      "x": 26,
+      "y": 370,
+      "w": 114,
+      "h": 24,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "Policy",
+      "confidence": 99,
+      "x": 533,
+      "y": 391,
+      "w": 66,
+      "h": 34,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "Notes",
+      "confidence": 99,
+      "x": 26,
+      "y": 424,
+      "w": 60,
+      "h": 24,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "Policy",
+      "confidence": 99,
+      "x": 533,
+      "y": 453,
+      "w": 66,
+      "h": 34,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "Type",
+      "confidence": 99,
+      "x": 598,
+      "y": 458,
+      "w": 50,
+      "h": 28,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "cnone>",
+      "confidence": 74,
+      "x": 853,
+      "y": 465,
+      "w": 70,
+      "h": 16,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "nTif:",
+      "confidence": 35,
+      "x": 861,
+      "y": 465,
+      "w": 52,
+      "h": 16,
+      "method": "easyocr_preprocessed"
+    },
+    {
+      "text": "Insured Name",
+      "confidence": 99,
+      "x": 534,
+      "y": 520,
+      "w": 140,
+      "h": 24,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "Policy Systcm",
+      "confidence": 88,
+      "x": 534,
+      "y": 579,
+      "w": 138,
+      "h": 29,
+      "method": "easyocr_preprocessed"
+    },
+    {
+      "text": "Policy System",
+      "confidence": 88,
+      "x": 536,
+      "y": 582,
+      "w": 134,
+      "h": 26,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "<none>",
+      "confidence": 95,
+      "x": 849,
+      "y": 585,
+      "w": 74,
+      "h": 20,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "dd/MMJyyyy",
+      "confidence": 44,
+      "x": 848,
+      "y": 640,
+      "w": 122,
+      "h": 31,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "Loss Date",
+      "confidence": 92,
+      "x": 536,
+      "y": 642,
+      "w": 96,
+      "h": 24,
+      "method": "easyocr_preprocessed"
+    },
+    {
+      "text": "Search",
+      "confidence": 99,
+      "x": 544,
+      "y": 724,
+      "w": 70,
+      "h": 26,
+      "method": "easyocr_preprocessed"
+    },
+    {
+      "text": "Reset",
+      "confidence": 99,
+      "x": 660,
+      "y": 724,
+      "w": 60,
+      "h": 26,
+      "method": "easyocr_preprocessed"
+    },
+    {
+      "text": "City",
+      "confidence": 99,
+      "x": 1490,
+      "y": 806,
+      "w": 47,
+      "h": 28,
+      "method": "easyocr_preprocessed"
+    },
+    {
+      "text": "Pol Sym",
+      "confidence": 78,
+      "x": 572,
+      "y": 808,
+      "w": 84,
+      "h": 26,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "Policy #",
+      "confidence": 79,
+      "x": 850,
+      "y": 808,
+      "w": 80,
+      "h": 26,
+      "method": "easyocr_preprocessed"
+    },
+    {
+      "text": "Insured",
+      "confidence": 99,
+      "x": 996,
+      "y": 808,
+      "w": 80,
+      "h": 24,
+      "method": "easyocr_original"
+    },
+    {
+      "text": "Address",
+      "confidence": 99,
+      "x": 1142,
+      "y": 808,
+      "w": 82,
+      "h": 24,
+      "method": "easyocr_preprocessed"
+    },
+    {
+      "text": "Mod",
+      "confidence": 99,
+      "x": 1290,
+      "y": 808,
+      "w": 46,
+      "h": 24,
+      "method": "easyocr_preprocessed"
+    },
+    {
+      "text": "State",
+      "confidence": 99,
+      "x": 1602,
+      "y": 808,
+      "w": 56,
+      "h": 24,
+      "method": "easyocr_preprocessed"
+    }
+  ],
+  "structure": {
+    "labels": [
+      {
+        "text": "Address Book",
+        "confidence": 99,
+        "x": 915,
+        "y": 20,
+        "w": 137,
+        "h": 30,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Ins:",
+        "confidence": 99,
+        "x": 622,
+        "y": 90,
+        "w": 40,
+        "h": 24,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Dol:",
+        "confidence": 99,
+        "x": 684,
+        "y": 90,
+        "w": 48,
+        "h": 24,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Pol:",
+        "confidence": 99,
+        "x": 561,
+        "y": 91,
+        "w": 40,
+        "h": 20,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Policy",
+        "confidence": 56,
+        "x": 852,
+        "y": 136,
+        "w": 112,
+        "h": 57,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Step 1: Search or Create Policy",
+        "confidence": 83,
+        "x": 481,
+        "y": 142,
+        "w": 481,
+        "h": 51,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Policy",
+        "confidence": 99,
+        "x": 597,
+        "y": 227,
+        "w": 66,
+        "h": 34,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Policy",
+        "confidence": 99,
+        "x": 879,
+        "y": 227,
+        "w": 66,
+        "h": 34,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Policy",
+        "confidence": 99,
+        "x": 96,
+        "y": 250,
+        "w": 67,
+        "h": 35,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Policy",
+        "confidence": 99,
+        "x": 533,
+        "y": 391,
+        "w": 66,
+        "h": 34,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Policy",
+        "confidence": 99,
+        "x": 533,
+        "y": 453,
+        "w": 66,
+        "h": 34,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "nTif:",
+        "confidence": 35,
+        "x": 861,
+        "y": 465,
+        "w": 52,
+        "h": 16,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Insured Name",
+        "confidence": 99,
+        "x": 534,
+        "y": 520,
+        "w": 140,
+        "h": 24,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Policy Systcm",
+        "confidence": 88,
+        "x": 534,
+        "y": 579,
+        "w": 138,
+        "h": 29,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Policy System",
+        "confidence": 88,
+        "x": 536,
+        "y": 582,
+        "w": 134,
+        "h": 26,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Loss Date",
+        "confidence": 92,
+        "x": 536,
+        "y": 642,
+        "w": 96,
+        "h": 24,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Policy #",
+        "confidence": 79,
+        "x": 850,
+        "y": 808,
+        "w": 80,
+        "h": 26,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Address",
+        "confidence": 99,
+        "x": 1142,
+        "y": 808,
+        "w": 82,
+        "h": 24,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "State",
+        "confidence": 99,
+        "x": 1602,
+        "y": 808,
+        "w": 56,
+        "h": 24,
+        "method": "easyocr_preprocessed"
+      }
+    ],
+    "values": [
+      {
+        "text": "Team",
+        "confidence": 99,
+        "x": 1268,
+        "y": 21,
+        "w": 59,
+        "h": 27,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Desktop",
+        "confidence": 99,
+        "x": 486,
+        "y": 22,
+        "w": 86,
+        "h": 28,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Claim",
+        "confidence": 99,
+        "x": 642,
+        "y": 22,
+        "w": 62,
+        "h": 30,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Search",
+        "confidence": 99,
+        "x": 774,
+        "y": 22,
+        "w": 70,
+        "h": 28,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Dashboard",
+        "confidence": 99,
+        "x": 1122,
+        "y": 22,
+        "w": 108,
+        "h": 24,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Go to (Alt+/)",
+        "confidence": 57,
+        "x": 1564,
+        "y": 22,
+        "w": 118,
+        "h": 28,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "G ClaimCenter'",
+        "confidence": 72,
+        "x": 34,
+        "y": 28,
+        "w": 260,
+        "h": 54,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "TM",
+        "confidence": 99,
+        "x": 287,
+        "y": 41,
+        "w": 22,
+        "h": 14,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "St: Draft",
+        "confidence": 97,
+        "x": 752,
+        "y": 88,
+        "w": 88,
+        "h": 26,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "ns_",
+        "confidence": 68,
+        "x": 631,
+        "y": 95,
+        "w": 26,
+        "h": 16,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Actions",
+        "confidence": 99,
+        "x": 53,
+        "y": 128,
+        "w": 77,
+        "h": 30,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "S:cp 1: Scarc` cr Crca:c",
+        "confidence": 47,
+        "x": 485,
+        "y": 144,
+        "w": 376,
+        "h": 48,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Cance]",
+        "confidence": 89,
+        "x": 1681,
+        "y": 149,
+        "w": 71,
+        "h": 27,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "New Claim Wizard",
+        "confidence": 73,
+        "x": 12,
+        "y": 194,
+        "w": 208,
+        "h": 30,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Finc",
+        "confidence": 48,
+        "x": 552,
+        "y": 232,
+        "w": 48,
+        "h": 24,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Find",
+        "confidence": 99,
+        "x": 552,
+        "y": 232,
+        "w": 48,
+        "h": 24,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Crcatc Unvcrified",
+        "confidence": 94,
+        "x": 714,
+        "y": 232,
+        "w": 168,
+        "h": 24,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Create Unverified",
+        "confidence": 94,
+        "x": 714,
+        "y": 232,
+        "w": 168,
+        "h": 24,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Find",
+        "confidence": 99,
+        "x": 52,
+        "y": 254,
+        "w": 48,
+        "h": 26,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Parties Involved",
+        "confidence": 99,
+        "x": 26,
+        "y": 316,
+        "w": 154,
+        "h": 24,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Documents",
+        "confidence": 99,
+        "x": 26,
+        "y": 370,
+        "w": 114,
+        "h": 24,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Notes",
+        "confidence": 99,
+        "x": 26,
+        "y": 424,
+        "w": 60,
+        "h": 24,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Type",
+        "confidence": 99,
+        "x": 598,
+        "y": 458,
+        "w": 50,
+        "h": 28,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "cnone>",
+        "confidence": 74,
+        "x": 853,
+        "y": 465,
+        "w": 70,
+        "h": 16,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "<none>",
+        "confidence": 95,
+        "x": 849,
+        "y": 585,
+        "w": 74,
+        "h": 20,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "dd/MMJyyyy",
+        "confidence": 44,
+        "x": 848,
+        "y": 640,
+        "w": 122,
+        "h": 31,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Search",
+        "confidence": 99,
+        "x": 544,
+        "y": 724,
+        "w": 70,
+        "h": 26,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Reset",
+        "confidence": 99,
+        "x": 660,
+        "y": 724,
+        "w": 60,
+        "h": 26,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "City",
+        "confidence": 99,
+        "x": 1490,
+        "y": 806,
+        "w": 47,
+        "h": 28,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Pol Sym",
+        "confidence": 78,
+        "x": 572,
+        "y": 808,
+        "w": 84,
+        "h": 26,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Insured",
+        "confidence": 99,
+        "x": 996,
+        "y": 808,
+        "w": 80,
+        "h": 24,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Mod",
+        "confidence": 99,
+        "x": 1290,
+        "y": 808,
+        "w": 46,
+        "h": 24,
+        "method": "easyocr_preprocessed"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "Cancel",
+        "confidence": 95,
+        "x": 1682,
+        "y": 150,
+        "w": 70,
+        "h": 28,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Next >",
+        "confidence": 65,
+        "x": 1812,
+        "y": 150,
+        "w": 62,
+        "h": 24,
+        "method": "easyocr_original"
+      }
+    ],
+    "all_text": [
+      {
+        "text": "Address Book",
+        "confidence": 99,
+        "x": 915,
+        "y": 20,
+        "w": 137,
+        "h": 30,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Team",
+        "confidence": 99,
+        "x": 1268,
+        "y": 21,
+        "w": 59,
+        "h": 27,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Desktop",
+        "confidence": 99,
+        "x": 486,
+        "y": 22,
+        "w": 86,
+        "h": 28,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Claim",
+        "confidence": 99,
+        "x": 642,
+        "y": 22,
+        "w": 62,
+        "h": 30,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Search",
+        "confidence": 99,
+        "x": 774,
+        "y": 22,
+        "w": 70,
+        "h": 28,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Dashboard",
+        "confidence": 99,
+        "x": 1122,
+        "y": 22,
+        "w": 108,
+        "h": 24,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Go to (Alt+/)",
+        "confidence": 57,
+        "x": 1564,
+        "y": 22,
+        "w": 118,
+        "h": 28,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "G ClaimCenter'",
+        "confidence": 72,
+        "x": 34,
+        "y": 28,
+        "w": 260,
+        "h": 54,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "TM",
+        "confidence": 99,
+        "x": 287,
+        "y": 41,
+        "w": 22,
+        "h": 14,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "St: Draft",
+        "confidence": 97,
+        "x": 752,
+        "y": 88,
+        "w": 88,
+        "h": 26,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Ins:",
+        "confidence": 99,
+        "x": 622,
+        "y": 90,
+        "w": 40,
+        "h": 24,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Dol:",
+        "confidence": 99,
+        "x": 684,
+        "y": 90,
+        "w": 48,
+        "h": 24,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Pol:",
+        "confidence": 99,
+        "x": 561,
+        "y": 91,
+        "w": 40,
+        "h": 20,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "ns_",
+        "confidence": 68,
+        "x": 631,
+        "y": 95,
+        "w": 26,
+        "h": 16,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Actions",
+        "confidence": 99,
+        "x": 53,
+        "y": 128,
+        "w": 77,
+        "h": 30,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Policy",
+        "confidence": 56,
+        "x": 852,
+        "y": 136,
+        "w": 112,
+        "h": 57,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Step 1: Search or Create Policy",
+        "confidence": 83,
+        "x": 481,
+        "y": 142,
+        "w": 481,
+        "h": 51,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "S:cp 1: Scarc` cr Crca:c",
+        "confidence": 47,
+        "x": 485,
+        "y": 144,
+        "w": 376,
+        "h": 48,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Cance]",
+        "confidence": 89,
+        "x": 1681,
+        "y": 149,
+        "w": 71,
+        "h": 27,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Cancel",
+        "confidence": 95,
+        "x": 1682,
+        "y": 150,
+        "w": 70,
+        "h": 28,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Next >",
+        "confidence": 65,
+        "x": 1812,
+        "y": 150,
+        "w": 62,
+        "h": 24,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "New Claim Wizard",
+        "confidence": 73,
+        "x": 12,
+        "y": 194,
+        "w": 208,
+        "h": 30,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Policy",
+        "confidence": 99,
+        "x": 597,
+        "y": 227,
+        "w": 66,
+        "h": 34,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Policy",
+        "confidence": 99,
+        "x": 879,
+        "y": 227,
+        "w": 66,
+        "h": 34,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Finc",
+        "confidence": 48,
+        "x": 552,
+        "y": 232,
+        "w": 48,
+        "h": 24,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Find",
+        "confidence": 99,
+        "x": 552,
+        "y": 232,
+        "w": 48,
+        "h": 24,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Crcatc Unvcrified",
+        "confidence": 94,
+        "x": 714,
+        "y": 232,
+        "w": 168,
+        "h": 24,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Create Unverified",
+        "confidence": 94,
+        "x": 714,
+        "y": 232,
+        "w": 168,
+        "h": 24,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Policy",
+        "confidence": 99,
+        "x": 96,
+        "y": 250,
+        "w": 67,
+        "h": 35,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Find",
+        "confidence": 99,
+        "x": 52,
+        "y": 254,
+        "w": 48,
+        "h": 26,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Parties Involved",
+        "confidence": 99,
+        "x": 26,
+        "y": 316,
+        "w": 154,
+        "h": 24,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Documents",
+        "confidence": 99,
+        "x": 26,
+        "y": 370,
+        "w": 114,
+        "h": 24,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Policy",
+        "confidence": 99,
+        "x": 533,
+        "y": 391,
+        "w": 66,
+        "h": 34,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Notes",
+        "confidence": 99,
+        "x": 26,
+        "y": 424,
+        "w": 60,
+        "h": 24,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Policy",
+        "confidence": 99,
+        "x": 533,
+        "y": 453,
+        "w": 66,
+        "h": 34,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Type",
+        "confidence": 99,
+        "x": 598,
+        "y": 458,
+        "w": 50,
+        "h": 28,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "cnone>",
+        "confidence": 74,
+        "x": 853,
+        "y": 465,
+        "w": 70,
+        "h": 16,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "nTif:",
+        "confidence": 35,
+        "x": 861,
+        "y": 465,
+        "w": 52,
+        "h": 16,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Insured Name",
+        "confidence": 99,
+        "x": 534,
+        "y": 520,
+        "w": 140,
+        "h": 24,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Policy Systcm",
+        "confidence": 88,
+        "x": 534,
+        "y": 579,
+        "w": 138,
+        "h": 29,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Policy System",
+        "confidence": 88,
+        "x": 536,
+        "y": 582,
+        "w": 134,
+        "h": 26,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "<none>",
+        "confidence": 95,
+        "x": 849,
+        "y": 585,
+        "w": 74,
+        "h": 20,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "dd/MMJyyyy",
+        "confidence": 44,
+        "x": 848,
+        "y": 640,
+        "w": 122,
+        "h": 31,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Loss Date",
+        "confidence": 92,
+        "x": 536,
+        "y": 642,
+        "w": 96,
+        "h": 24,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Search",
+        "confidence": 99,
+        "x": 544,
+        "y": 724,
+        "w": 70,
+        "h": 26,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Reset",
+        "confidence": 99,
+        "x": 660,
+        "y": 724,
+        "w": 60,
+        "h": 26,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "City",
+        "confidence": 99,
+        "x": 1490,
+        "y": 806,
+        "w": 47,
+        "h": 28,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Pol Sym",
+        "confidence": 78,
+        "x": 572,
+        "y": 808,
+        "w": 84,
+        "h": 26,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Policy #",
+        "confidence": 79,
+        "x": 850,
+        "y": 808,
+        "w": 80,
+        "h": 26,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Insured",
+        "confidence": 99,
+        "x": 996,
+        "y": 808,
+        "w": 80,
+        "h": 24,
+        "method": "easyocr_original"
+      },
+      {
+        "text": "Address",
+        "confidence": 99,
+        "x": 1142,
+        "y": 808,
+        "w": 82,
+        "h": 24,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "Mod",
+        "confidence": 99,
+        "x": 1290,
+        "y": 808,
+        "w": 46,
+        "h": 24,
+        "method": "easyocr_preprocessed"
+      },
+      {
+        "text": "State",
+        "confidence": 99,
+        "x": 1602,
+        "y": 808,
+        "w": 56,
+        "h": 24,
+        "method": "easyocr_preprocessed"
+      }
+    ]
+  }
+}
